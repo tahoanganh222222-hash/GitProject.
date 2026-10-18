@@ -1,0 +1,25 @@
+* { box-sizing: border-box; }
+:root { font-family: Arial, Helvetica, sans-serif; color: #27364b; background: #f3f5f9; }
+body { margin: 0; padding: 40px 20px; }
+.page { max-width: 940px; margin: 0 auto; }
+.page-header { margin-bottom: 26px; text-align: center; }
+.eyebrow { margin: 0 0 9px; color: #586dc6; font-size: 10px; font-weight: 800; letter-spacing: .15em; }
+h1 { margin: 0; font-size: clamp(29px, 5vw, 42px); letter-spacing: -.04em; }
+h1 code { color: #465cbb; font-size: .84em; }
+.page-header > p:last-child { max-width: 620px; margin: 10px auto 0; color: #758196; font-size: 14px; line-height: 1.6; }
+.demo-panel { padding: 22px; border: 1px solid #e3e8ef; border-radius: 13px; background: #fff; box-shadow: 0 8px 25px rgb(35 50 75 / 6%); }
+.panel-heading { display: flex; align-items: center; justify-content: space-between; gap: 15px; margin-bottom: 19px; }.demo-label { display: block; margin-bottom: 5px; color: #7b89d6; font-size: 9px; font-weight: 800; letter-spacing: .13em; }.panel-heading h2 { margin: 0; font-size: 19px; }.select-label { display: flex; align-items: center; gap: 8px; color: #788498; font-size: 11px; }.select-label select { min-width: 145px; padding: 9px 30px 9px 10px; border: 1px solid #dce2ec; border-radius: 7px; color: #455bb2; background: #f8f9ff; font: inherit; font-weight: 700; cursor: pointer; }
+.frame-heading { display: flex; align-items: center; justify-content: space-between; margin-bottom: 7px; color: #7c8799; font-size: 10px; }.frame-heading code { color: #465cbb; }
+.demo-frame { overflow-x: auto; border: 2px solid #303a4c; border-radius: 9px; background: #f8f9fc; }
+.demo-container { display: flex; flex-wrap: wrap; align-content: flex-start; gap: 10px; width: 100%; min-width: 0; height: 285px; padding: 15px; }
+.demo-container.is-wrap { flex-wrap: wrap; }
+.demo-container.is-nowrap { flex-wrap: nowrap; }
+.demo-container.is-wrap-reverse { flex-wrap: wrap-reverse; }
+.demo-container.is-initial { flex-wrap: initial; }
+.item { display: flex; flex: 0 0 31%; min-width: 145px; height: 80px; flex-direction: column; align-items: center; justify-content: center; gap: 5px; border: 1px solid #cbdcf0; border-radius: 9px; color: #36516e; background: #e3effb; font-size: 13px; font-weight: 700; box-shadow: 0 3px 8px rgb(44 75 112 / 5%); }
+.item > span { color: #7d92ae; font-size: 8px; letter-spacing: .1em; }.item-two, .item-five { color: #546344; background: #e9f3df; border-color: #d7e6c8; }.item-three, .item-six { color: #785b58; background: #fae9e2; border-color: #efd5cb; }
+.result-note { min-height: 18px; margin: 11px 0 0; color: #6e7b8e; font-size: 12px; }
+.value-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; margin-top: 16px; }.value-card { padding: 15px; border: 1px solid #e4e8ef; border-radius: 10px; background: #fff; }.value-icon { display: grid; place-items: center; width: 30px; height: 30px; margin-bottom: 10px; border-radius: 9px; color: #5266bb; background: #eff1ff; font-size: 17px; font-weight: 700; }.icon-nowrap { color: #ad6c50; background: #fff1e9; }.icon-reverse { color: #57856b; background: #eaf5ed; }.icon-initial { color: #7b62ae; background: #f2edfa; }.value-card h3 { margin: 0 0 5px; font-size: 13px; }.value-card p { margin: 0; color: #788496; font-size: 10px; line-height: 1.55; }.value-card code { color: #4e61b1; font-size: 9px; }
+footer { margin-top: 22px; color: #8994a3; font-size: 10px; text-align: center; }
+@media (max-width: 680px) { body { padding: 28px 13px; }.demo-panel { padding: 16px; }.demo-container { height: 300px; }.item { flex-basis: 47%; min-width: 135px; }.value-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 9px; } }
+@media (max-width: 420px) { .panel-heading { align-items: flex-start; flex-direction: column; }.select-label { align-self: stretch; justify-content: space-between; }.select-label select { flex: 1; max-width: 190px; }.demo-container { height: 320px; padding: 10px; }.item { flex-basis: 100%; min-width: 0; height: 58px; flex-direction: row; }.demo-container.is-nowrap { min-width: 570px; }.demo-container.is-nowrap .item { flex-basis: 180px; height: 80px; flex-direction: column; }.value-card { padding: 12px; } }

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Flexbox — flex-wrap</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <main class="page">
+        <header class="page-header">
+            <p class="eyebrow">THỰC HÀNH CSS FLEXBOX</p>
+            <h1>Thuộc tính <code>flex-wrap</code></h1>
+            <p>Chọn một giá trị để quan sát cách các Flex Item sắp xếp khi không đủ chỗ trên một dòng.</p>
+        </header>
+
+        <section class="demo-panel" aria-labelledby="demo-title">
+            <div class="panel-heading">
+                <div><span class="demo-label">VÍ DỤ TƯƠNG TÁC</span><h2 id="demo-title">Thay đổi cách xuống dòng</h2></div>
+                <label class="select-label" for="wrap-select">flex-wrap
+                    <select id="wrap-select">
+                        <option value="wrap">wrap</option>
+                        <option value="nowrap">nowrap</option>
+                        <option value="wrap-reverse">wrap-reverse</option>
+                        <option value="initial">initial</option>
+                    </select>
+                </label>
+            </div>
+
+            <div class="frame-heading"><span>Flex Container</span><code id="current-value">flex-wrap: wrap;</code></div>
+            <div class="demo-frame">
+                <div class="demo-container is-wrap" id="demo-container" aria-live="polite">
+                    <div class="item item-one"><span>01</span>Item 1</div>
+                    <div class="item item-two"><span>02</span>Item 2</div>
+                    <div class="item item-three"><span>03</span>Item 3</div>
+                    <div class="item item-four"><span>04</span>Item 4</div>
+                    <div class="item item-five"><span>05</span>Item 5</div>
+                    <div class="item item-six"><span>06</span>Item 6</div>
+                </div>
+            </div>
+            <p class="result-note" id="result-note">Các item được phép xuống dòng mới khi không đủ chỗ.</p>
+        </section>
+
+        <section class="value-grid" aria-label="Tóm tắt các giá trị flex-wrap">
+            <article class="value-card"><span class="value-icon icon-wrap">↵</span><h3>wrap</h3><p>Cho phép các item chuyển xuống dòng tiếp theo.</p></article>
+            <article class="value-card"><span class="value-icon icon-nowrap">→</span><h3>nowrap</h3><p>Giữ các item trên một dòng; nội dung có thể tràn container.</p></article>
+            <article class="value-card"><span class="value-icon icon-reverse">↕</span><h3>wrap-reverse</h3><p>Cho phép xuống dòng theo hướng ngược của cross axis.</p></article>
+            <article class="value-card"><span class="value-icon icon-initial">↺</span><h3>initial</h3><p>Trở về giá trị ban đầu của thuộc tính: <code>nowrap</code>.</p></article>
+        </section>
+
+        <footer>Flexbox · Kích thước mỗi item cố định để dễ quan sát sự khác nhau giữa các giá trị.</footer>
+    </main>
+</body>
+</html>
