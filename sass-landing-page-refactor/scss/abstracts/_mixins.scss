@@ -1,0 +1,10 @@
+@mixin horizontal-padding($minimum, $fluid, $maximum) {
+  padding-right: clamp($minimum, $fluid, $maximum);
+  padding-left: clamp($minimum, $fluid, $maximum);
+}
+
+@mixin section-spacing($vertical, $minimum, $fluid, $maximum) {
+  padding-top: $vertical;
+  padding-bottom: $vertical;
+  @include horizontal-padding($minimum, $fluid, $maximum);
+}
