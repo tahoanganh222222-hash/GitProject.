@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bố cục responsive sử dụng Bootstrap Containers và Grid System.">
+    <title>Bootstrap Grid System</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header py-4">
+        <div class="container d-flex align-items-center justify-content-between gap-3">
+            <div><p class="eyebrow mb-1">KHÔNG GIAN HỌC TẬP</p><h1 class="h3 fw-bold mb-0">Grid<span>Journal</span></h1></div>
+            <span class="header-note">Ý tưởng hay, chia sẻ mỗi ngày.</span>
+        </div>
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-dark nav-custom">
+        <div class="container">
+            <a class="navbar-brand fw-semibold" href="#home">GridJournal</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Mở hoặc đóng menu"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="mainNavbar">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="#home">Trang chủ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#articles">Bài viết</a></li>
+                    <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#topics" role="button" data-bs-toggle="dropdown" aria-expanded="false">Chủ đề</a><ul class="dropdown-menu dropdown-menu-lg-end"><li><a class="dropdown-item" href="#technology">Công nghệ</a></li><li><a class="dropdown-item" href="#learning">Học tập</a></li><li><hr class="dropdown-divider"></li><li><a class="dropdown-item" href="#creativity">Sáng tạo</a></li></ul></li>
+                    <li class="nav-item"><a class="nav-link" href="#footer">Liên hệ</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container py-4 py-lg-5" id="home">
+        <div class="row g-4">
+            <div class="col-12 col-lg-8">
+                <section class="main-column" id="articles">
+                    <article class="featured-article mb-4">
+                        <div class="featured-art" aria-hidden="true"><span>✦</span><i></i><b></b></div>
+                        <div class="featured-copy"><p class="eyebrow">BÀI VIẾT NỔI BẬT · 8 PHÚT ĐỌC</p><h2>Ý tưởng tốt bắt đầu từ những bước nhỏ</h2><p>Khám phá cách xây dựng thói quen học tập bền vững và tiến bộ mỗi ngày.</p><a href="#technology" class="btn btn-primary btn-sm">Đọc bài viết <span class="ms-2">→</span></a></div>
+                    </article>
+                    <div class="d-flex align-items-end justify-content-between mb-3"><div><p class="eyebrow mb-1">CẬP NHẬT MỚI</p><h2 class="h4 fw-bold mb-0">Bài viết dành cho bạn</h2></div><a class="small fw-semibold" href="#articles">Xem tất cả →</a></div>
+                    <div class="row g-3">
+                        <div class="col-12 col-md-6" id="technology"><article class="card article-card h-100"><div class="article-art art-blue"><span>01</span><b>⌘</b></div><div class="card-body"><span class="category">CÔNG NGHỆ</span><h3 class="h5 mt-2">Thiết kế website dễ sử dụng</h3><p class="text-secondary small">Nguyên tắc cơ bản giúp nội dung rõ ràng và dễ tìm.</p><small class="text-body-tertiary">12 tháng 10 · 5 phút đọc</small></div></article></div>
+                        <div class="col-12 col-md-6" id="learning"><article class="card article-card h-100"><div class="article-art art-peach"><span>02</span><b>✎</b></div><div class="card-body"><span class="category">HỌC TẬP</span><h3 class="h5 mt-2">Lập kế hoạch học tập hiệu quả</h3><p class="text-secondary small">Chia mục tiêu lớn thành những việc nhỏ dễ thực hiện.</p><small class="text-body-tertiary">10 tháng 10 · 4 phút đọc</small></div></article></div>
+                        <div class="col-12 col-md-6" id="creativity"><article class="card article-card h-100"><div class="article-art art-green"><span>03</span><b>⌁</b></div><div class="card-body"><span class="category">SÁNG TẠO</span><h3 class="h5 mt-2">Nuôi dưỡng sự tò mò</h3><p class="text-secondary small">Một câu hỏi hay có thể mở ra nhiều điều để khám phá.</p><small class="text-body-tertiary">08 tháng 10 · 6 phút đọc</small></div></article></div>
+                        <div class="col-12 col-md-6"><article class="card article-card h-100"><div class="article-art art-lilac"><span>04</span><b>▤</b></div><div class="card-body"><span class="category">LÀM VIỆC</span><h3 class="h5 mt-2">Tập trung giữa nhiều xao nhãng</h3><p class="text-secondary small">Tạo không gian phù hợp cho những việc quan trọng.</p><small class="text-body-tertiary">05 tháng 10 · 7 phút đọc</small></div></article></div>
+                    </div>
+                </section>
+            </div>
+
+            <aside class="col-12 col-lg-4" id="topics">
+                <div class="sidebar-stack">
+                    <section class="sidebar-card author-card"><p class="eyebrow">VỀ GRIDJOURNAL</p><div class="author-avatar">G</div><h2 class="h5 fw-bold">Không gian để khám phá</h2><p class="text-secondary small">Những câu chuyện và ý tưởng về công nghệ, học tập và sáng tạo.</p><a href="#footer" class="small fw-semibold">Tìm hiểu thêm →</a></section>
+                    <section class="sidebar-card"><p class="eyebrow">ĐƯỢC QUAN TÂM</p><h2 class="h5 fw-bold mb-3">Đọc nhiều tuần này</h2><a class="popular-link" href="#technology"><span>01</span><strong>Học kỹ năng mới từ đâu?</strong></a><a class="popular-link" href="#learning"><span>02</span><strong>Thiết kế thói quen tích cực</strong></a><a class="popular-link" href="#creativity"><span>03</span><strong>Giữ cho ý tưởng luôn mới</strong></a></section>
+                    <section class="newsletter-card"><span class="newsletter-icon">✉</span><h2 class="h5 fw-bold">Bản tin mỗi tuần</h2><p class="small">Nhận các bài viết và tài nguyên mới.</p><a class="btn btn-outline-success btn-sm" href="mailto:hello@gridjournal.example">Đăng ký qua email</a></section>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <footer class="site-footer py-4" id="footer"><div class="container d-flex flex-column flex-md-row align-items-md-center justify-content-between gap-2"><span class="fw-bold">GridJournal</span><small>© 2026 GridJournal · Bố cục thực hành Bootstrap Grid System</small><a href="#home" class="small">Lên đầu trang ↑</a></div></footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
