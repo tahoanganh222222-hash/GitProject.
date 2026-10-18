@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nhúng CSS vào trang HTML</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .internal-title {
+            color: #2766a3;
+        }
+
+        .internal-text {
+            color: #526b84;
+        }
+    </style>
+</head>
+<body>
+    <main class="page">
+        <header>
+            <p class="eyebrow">THỰC HÀNH HTML &amp; CSS</p>
+            <h1>Ba cách nhúng CSS</h1>
+            <p>So sánh CSS nội tuyến, CSS nội bộ và CSS bên ngoài.</p>
+        </header>
+
+        <section class="example inline-example">
+            <h2 style="color: #b54737;">Phần 1: Inline style</h2>
+            <p style="color: #7a3d35;">Màu của tiêu đề và đoạn văn được đặt trực tiếp bằng thuộc tính style.</p>
+        </section>
+
+        <section class="example internal-example">
+            <h2 class="internal-title">Phần 2: Internal style</h2>
+            <p class="internal-text">Màu sắc được định nghĩa trong thẻ style ở phần head của trang HTML.</p>
+        </section>
+
+        <section class="example external-example">
+            <h2 class="external-title">Phần 3: External style</h2>
+            <p class="external-text">Màu sắc được định nghĩa trong file style.css và liên kết với trang HTML.</p>
+        </section>
+    </main>
+</body>
+</html>
