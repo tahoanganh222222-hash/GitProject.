@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Giao diện mẫu website xem phim hoạt hình trực tuyến dành cho gia đình.">
+    <title>Mầm Phim - Hoạt hình cho cả nhà</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+        <a class="brand" href="#trang-chu" aria-label="Mầm Phim - Trang chủ">
+            <span class="brand-mark" aria-hidden="true">▶</span>
+            <span>Mầm<span class="brand-accent">Phim</span></span>
+        </a>
+        <nav class="head-link" aria-label="Điều hướng chính">
+            <a class="active" href="#trang-chu">Trang chủ</a>
+            <a href="#thu-vien">Thư viện</a>
+            <a href="#gioi-thieu">Giới thiệu</a>
+        </nav>
+        <a class="header-pill" href="#thu-vien">Khám phá phim <span aria-hidden="true">↓</span></a>
+    </header>
+
+    <main id="trang-chu">
+        <section class="welcome" aria-labelledby="welcome-title">
+            <div>
+                <p class="eyebrow">THẾ GIỚI HOẠT HÌNH AN TOÀN</p>
+                <h1 id="welcome-title">Cùng xem, cùng mơ<br><span>cùng khám phá.</span></h1>
+                <p class="welcome-copy">Góc phim hoạt hình thân thiện cho những giờ phút vui vẻ bên gia đình.</p>
+            </div>
+            <div class="welcome-art" aria-hidden="true">
+                <span class="sun">☀</span><span class="cloud cloud-one">☁</span><span class="cloud cloud-two">☁</span>
+                <span class="hill hill-back"></span><span class="hill hill-front"></span><span class="art-star star-one">✦</span><span class="art-star star-two">✦</span>
+            </div>
+        </section>
+
+        <section class="library" id="thu-vien" aria-label="Thư viện phim hoạt hình">
+            <div class="library-heading">
+                <div>
+                    <p class="eyebrow">THƯ VIỆN PHIM</p>
+                    <h2>Chọn một chuyến phiêu lưu</h2>
+                </div>
+                <div class="library-tools">
+                    <label class="search-box">
+                        <span class="visually-hidden">Tìm phim theo tên</span>
+                        <span aria-hidden="true">⌕</span>
+                        <input id="search-input" type="search" placeholder="Tìm tên phim..." autocomplete="off">
+                    </label>
+                    <label class="sort-box" for="sort-select">Sắp xếp
+                        <select id="sort-select">
+                            <option value="recent">Mới cập nhật</option>
+                            <option value="views">Nhiều lượt xem</option>
+                        </select>
+                    </label>
+                </div>
+            </div>
+
+            <div class="content-layout">
+                <aside class="left-content panel" aria-label="Danh sách video">
+                    <div class="panel-heading">
+                        <h2>Danh sách phim</h2>
+                        <span id="film-count" class="count-badge">3 phim</span>
+                    </div>
+                    <div id="film-list" class="film-list">
+                        <button class="film-item selected" type="button"
+                            data-title="Chú thỏ Big Buck Bunny"
+                            data-description="Một chuyến phiêu lưu vui nhộn giữa khu rừng xanh. Video mẫu dùng để minh họa trình phát HTML5."
+                            data-src="https://storage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+                            data-poster="https://peach.blender.org/wp-content/uploads/title_anouncement.jpg?x11217"
+                            data-views="9800" data-date="3">
+                            <span class="film-thumb thumb-bunny" aria-hidden="true"><span>🐰</span><i>▶</i></span>
+                            <span class="film-meta"><strong>Chú thỏ Big Buck Bunny</strong><small>Hoạt hình · 10 phút</small><small class="film-tag">MẪU PHÁT VIDEO</small></span>
+                        </button>
+                        <button class="film-item" type="button"
+                            data-title="Giấc mơ của voi"
+                            data-description="Một bộ phim hoạt hình ngắn kỳ ảo. Video mẫu thứ hai để thực hành chuyển đổi nội dung trong danh sách."
+                            data-src="https://storage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4"
+                            data-poster="https://orange.blender.org/wp-content/themes/orange/images/media/gallery/sintel_poster.jpg"
+                            data-views="7200" data-date="2">
+                            <span class="film-thumb thumb-elephant" aria-hidden="true"><span>🐘</span><i>▶</i></span>
+                            <span class="film-meta"><strong>Giấc mơ của voi</strong><small>Hoạt hình · 11 phút</small><small class="film-tag">MẪU PHÁT VIDEO</small></span>
+                        </button>
+                        <button class="film-item" type="button"
+                            data-title="Sintel và hành trình kỳ thú"
+                            data-description="Một hành trình hoạt hình phiêu lưu. Video mẫu thứ ba minh họa cách chọn phim."
+                            data-src="https://storage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4"
+                            data-poster="https://orange.blender.org/wp-content/themes/orange/images/media/gallery/sintel_poster.jpg"
+                            data-views="12500" data-date="1">
+                            <span class="film-thumb thumb-sintel" aria-hidden="true"><span>🐉</span><i>▶</i></span>
+                            <span class="film-meta"><strong>Sintel và hành trình kỳ thú</strong><small>Hoạt hình · 14 phút</small><small class="film-tag">MẪU PHÁT VIDEO</small></span>
+                        </button>
+                        <p id="empty-state" class="empty-state" hidden>Không tìm thấy phim phù hợp.</p>
+                    </div>
+                    <div class="safe-note"><span aria-hidden="true">♡</span><p>Nội dung được chọn lọc<br><strong>Trải nghiệm thân thiện gia đình</strong></p></div>
+                </aside>
+
+                <section class="right-content panel" aria-label="Khu vực xem phim">
+                    <div class="player-heading">
+                        <div>
+                            <p class="eyebrow">ĐANG PHÁT</p>
+                            <h2 id="player-title">Chú thỏ Big Buck Bunny</h2>
+                        </div>
+                        <span class="quality-badge">HD · 720p</span>
+                    </div>
+                    <div class="player-tabs" role="tablist" aria-label="Chọn trình phát">
+                        <button class="player-tab active" id="tab-video" type="button" role="tab" aria-selected="true" aria-controls="html5-panel">Video HTML5</button>
+                        <button class="player-tab" id="tab-youtube" type="button" role="tab" aria-selected="false" aria-controls="youtube-panel">Trailer YouTube</button>
+                    </div>
+                    <div id="html5-panel" class="video-frame" role="tabpanel" aria-labelledby="tab-video">
+                        <video id="movie-player" controls playsinline preload="metadata" poster="https://peach.blender.org/wp-content/uploads/title_anouncement.jpg?x11217">
+                            <source src="https://storage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4">
+                            Trình duyệt của bạn không hỗ trợ phát video HTML5.
+                        </video>
+                    </div>
+                    <div id="youtube-panel" class="video-frame" role="tabpanel" aria-labelledby="tab-youtube" hidden>
+                        <iframe id="youtube-player" src="https://www.youtube-nocookie.com/embed/aqz-KE-bpKQ?rel=0" title="Trailer Big Buck Bunny trên YouTube" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+                    </div>
+                    <p id="player-description" class="player-description">Một chuyến phiêu lưu vui nhộn giữa khu rừng xanh. Video mẫu dùng để minh họa trình phát HTML5.</p>
+                    <div class="player-footer"><span><b>●</b> Video mẫu công khai</span><span>Chọn phim khác từ danh sách bên trái</span></div>
+                </section>
+            </div>
+        </section>
+
+        <section class="about-strip" id="gioi-thieu">
+            <div class="about-icon" aria-hidden="true">✦</div>
+            <div><h2>Giờ xem phim vui vẻ</h2><p>Giao diện minh họa cách sắp xếp phim, tìm kiếm và lựa chọn trình phát.</p></div>
+            <span class="about-chip">Dành cho cả nhà</span>
+        </section>
+        <p class="demo-disclaimer">Các video và trailer trong trang là nguồn mẫu phục vụ bài thực hành. Hãy thay bằng video có quyền sử dụng và thuyết minh tiếng Việt trước khi phát hành website.</p>
+    </main>
+
+    <footer class="site-footer"><a class="brand footer-brand" href="#trang-chu"><span class="brand-mark" aria-hidden="true">▶</span><span>Mầm<span class="brand-accent">Phim</span></span></a><p>© 2026 Mầm Phim · Giao diện thực hành HTML &amp; CSS</p><a href="#trang-chu">Lên đầu trang ↑</a></footer>
+    <script src="script.js"></script>
+</body>
+</html>
