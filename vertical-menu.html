@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu dọc Dropdown</title>
+    <style>
+        * { box-sizing: border-box; }
+
+        body {
+            margin: 0;
+            padding: 40px;
+            background-color: #f2f4f6;
+            color: #273746;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1 { margin: 0 0 24px; }
+
+        #menu, #menu ul, #menu li {
+            margin: 0;
+            padding: 0;
+        }
+
+        #menu ul { list-style: none; }
+
+        #menu > ul { width: 140px; }
+
+        #menu li {
+            position: relative;
+            width: 140px;
+            height: 30px;
+            background-color: #111;
+            line-height: 30px;
+            cursor: pointer;
+        }
+
+        #menu li:hover, #menu li:focus-within { background-color: #315d70; }
+
+        #menu a {
+            display: block;
+            padding: 0 20px;
+            color: #fff;
+            text-decoration: none;
+            white-space: nowrap;
+        }
+
+        #menu li > ul {
+            position: absolute;
+            top: 0;
+            left: 160px;
+            visibility: hidden;
+            z-index: 2;
+        }
+
+        #menu li:hover > ul, #menu li:focus-within > ul { visibility: visible; }
+
+        .instructions {
+            max-width: 650px;
+            margin-top: 30px;
+            padding: 18px 20px;
+            border: 1px solid #d7dfe4;
+            border-radius: 8px;
+            background: #fff;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <h1>Menu dọc Dropdown</h1>
+
+    <nav id="menu" aria-label="Menu chính">
+        <ul>
+            <li><a href="#home">Trang chủ</a></li>
+            <li>
+                <a href="#courses">Khóa học ▸</a>
+                <ul>
+                    <li><a href="#html">HTML &amp; CSS</a></li>
+                    <li><a href="#javascript">JavaScript</a></li>
+                    <li><a href="#python">Python</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#resources">Tài nguyên ▸</a>
+                <ul>
+                    <li><a href="#documentation">Tài liệu</a></li>
+                    <li><a href="#projects">Dự án</a></li>
+                </ul>
+            </li>
+            <li><a href="#contact">Liên hệ</a></li>
+        </ul>
+    </nav>
+
+    <p class="instructions">Rê chuột lên “Khóa học” hoặc “Tài nguyên” để mở menu con. Có thể dùng phím Tab để di chuyển và mở menu bằng bàn phím.</p>
+</body>
+</html>
