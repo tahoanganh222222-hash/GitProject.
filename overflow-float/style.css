@@ -1,0 +1,143 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #29374b;
+    background: #f3f5f9;
+}
+
+body {
+    margin: 0;
+    padding: 42px 22px;
+}
+
+.page {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.page-header {
+    margin-bottom: 28px;
+    text-align: center;
+}
+
+.eyebrow {
+    margin: 0 0 8px;
+    color: #5a6bc5;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: .13em;
+}
+
+h1 {
+    margin: 0;
+    font-size: clamp(27px, 5vw, 40px);
+    letter-spacing: -.035em;
+}
+
+.page-header > p:last-child {
+    margin: 10px 0 0;
+    color: #718096;
+}
+
+.container {
+    width: 100%;
+    margin-bottom: 26px;
+}
+
+.container::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.column {
+    width: 49%;
+    min-height: 185px;
+    padding: 22px;
+    border: 1px solid #e3e8ef;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgb(36 50 75 / 5%);
+}
+
+.left-column {
+    float: left;
+    background-color: lightgray;
+}
+
+.right-column {
+    float: right;
+    background-color: lightgreen;
+}
+
+.column-label {
+    color: #627087;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: .12em;
+}
+
+.column h2 {
+    margin: 8px 0;
+    font-size: 21px;
+}
+
+.column p {
+    margin: 0;
+    color: #536174;
+    line-height: 1.65;
+}
+
+code {
+    padding: 2px 5px;
+    border-radius: 4px;
+    background: rgb(255 255 255 / 65%);
+    font-size: .9em;
+}
+
+.overflow-section {
+    padding: 22px;
+    border: 1px solid #e3e8ef;
+    border-radius: 12px;
+    background: #fff;
+    box-shadow: 0 6px 20px rgb(36 50 75 / 5%);
+}
+
+.section-heading {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 14px;
+}
+
+.section-heading .eyebrow { margin-bottom: 5px; }
+.section-heading h2 { margin: 0; font-size: 20px; }
+.overflow-label { padding: 6px 9px; border-radius: 999px; color: #a34e4e; background: #fff0ee; font-size: 11px; font-weight: 700; white-space: nowrap; }
+
+.overflow-box {
+    width: 100%;
+    max-width: 520px;
+    height: 150px;
+    padding: 14px 16px;
+    overflow: auto;
+    border: 1px solid #edb3ad;
+    border-radius: 8px;
+    background-color: lightcoral;
+    color: #512f32;
+    line-height: 1.6;
+}
+
+.overflow-box p { margin: 0 0 12px; }
+.overflow-box p:last-child { margin-bottom: 0; }
+.overflow-box:focus-visible { outline: 3px solid #b76d68; outline-offset: 3px; }
+.hint { margin: 10px 0 0; color: #7d8797; font-size: 12px; }
+
+@media (max-width: 620px) {
+    body { padding: 28px 16px; }
+    .column { width: 100%; min-height: 0; margin-bottom: 14px; }
+    .overflow-section { padding: 17px; }
+    .overflow-box { height: 145px; }
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bố cục trang với Float và Overflow</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="page">
+        <header class="page-header">
+            <p class="eyebrow">THỰC HÀNH CSS</p>
+            <h1>Bố cục trang với float và overflow</h1>
+            <p>Kết hợp bố cục hai cột với một vùng nội dung có thể cuộn.</p>
+        </header>
+
+        <section class="container" aria-label="Bố cục hai cột">
+            <div class="column left-column">
+                <span class="column-label">CỘT TRÁI</span>
+                <h2>Nội dung chính</h2>
+                <p>Cột này được căn về bên trái bằng <code>float: left</code>. Đây là nơi đặt nội dung chính của trang.</p>
+            </div>
+            <div class="column right-column">
+                <span class="column-label">CỘT PHẢI</span>
+                <h2>Thanh bên</h2>
+                <p>Cột này được căn về bên phải bằng <code>float: right</code>. Nó có thể chứa liên kết hoặc thông tin bổ sung.</p>
+            </div>
+        </section>
+
+        <section class="overflow-section" aria-labelledby="overflow-title">
+            <div class="section-heading">
+                <div><p class="eyebrow">NỘI DUNG DÀI</p><h2 id="overflow-title">Hộp có thanh cuộn</h2></div>
+                <span class="overflow-label">overflow: auto</span>
+            </div>
+            <div class="overflow-box" tabindex="0" aria-label="Nội dung dài có thể cuộn">
+                <p>Đây là nội dung dài để kiểm tra thuộc tính overflow. Khi phần chữ vượt quá chiều cao của hộp, thanh cuộn sẽ xuất hiện và bạn vẫn có thể đọc toàn bộ nội dung.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ultricies nunc in mauris pharetra, a ultricies justo fermentum. Curabitur interdum, sapien at feugiat tempor, mi neque aliquam risus, vitae malesuada arcu nibh at erat.</p>
+                <p>Nội dung tiếp tục ở phía dưới để minh họa vùng cuộn. Hãy dùng con lăn chuột khi con trỏ nằm trên hộp hoặc kéo thanh cuộn để xem thêm.</p>
+            </div>
+            <p class="hint">Cuộn bên trong khung để xem phần văn bản còn lại.</p>
+        </section>
+    </main>
+</body>
+</html>
