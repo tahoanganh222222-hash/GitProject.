@@ -1,0 +1,43 @@
+:root {
+    --green: #287a52;
+    --green-dark: #1d5e3e;
+    --ink: #20332a;
+    --soft: #f3f8f3;
+}
+
+html { scroll-behavior: smooth; }
+body { color: var(--ink); font-family: system-ui, -apple-system, "Segoe UI", sans-serif; }
+.navbar-brand { font-size: 1.35rem; letter-spacing: -.03em; }
+.nav-link { font-weight: 500; }
+.btn-success { background-color: var(--green); border-color: var(--green); }
+.btn-success:hover { background-color: var(--green-dark); border-color: var(--green-dark); }
+.hero-section { background: linear-gradient(120deg, #f4f8f2 0%, #fbfcf8 55%, #eaf3e8 100%); min-height: 590px; }
+.eyebrow, .section-kicker { color: var(--green); font-size: .85rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; }
+.hero-section h1 { color: var(--ink); line-height: 1.12; max-width: 620px; }
+.hero-section h1 span { color: var(--green); }
+.hero-image { width: 100%; height: 410px; object-fit: cover; border-radius: 2rem 2rem 2rem .5rem; box-shadow: 0 24px 60px #274d3024; }
+.py-lg-6 { padding-top: 6rem; padding-bottom: 6rem; }
+.about-image { width: 100%; max-height: 430px; object-fit: cover; border-radius: 1rem 3rem 1rem 3rem; }
+.section-title { color: var(--ink); font-size: clamp(2rem, 4vw, 2.8rem); font-weight: 750; letter-spacing: -.04em; }
+.stat { display: flex; flex-direction: column; padding-right: 1.25rem; }
+.stat + .stat { border-left: 1px solid #dce6dc; padding-left: 1.25rem; }
+.stat strong { color: var(--green); font-size: 1.25rem; }
+.stat span { color: #718078; font-size: .8rem; }
+.features-section { background: var(--soft); }
+.section-heading { max-width: 620px; }
+.feature-card { background: #fff; border: 1px solid #e7eee7; border-radius: 1rem; padding: 1.6rem; transition: transform .2s ease, box-shadow .2s ease; }
+.feature-card:hover { transform: translateY(-5px); box-shadow: 0 16px 35px #20332a12; }
+.feature-icon { display: grid; place-items: center; width: 3.25rem; height: 3.25rem; border-radius: 1rem; background: #e8f3e9; color: var(--green); font-size: 1.5rem; margin-bottom: 1.2rem; }
+.feature-card h3 { font-size: 1.1rem; font-weight: 700; }
+.feature-card p { color: #718078; font-size: .94rem; line-height: 1.65; margin: .65rem 0 0; }
+.cta-section { background: var(--green); color: #fff; }
+.cta-section h2 { letter-spacing: -.03em; }
+.cta-section p { color: #e3f1e7; }
+footer { background: #fff; }
+
+@media (max-width: 767.98px) {
+    .hero-section { min-height: auto; }
+    .hero-section .display-4 { font-size: 2.65rem; }
+    .hero-image { height: 290px; border-radius: 1.5rem 1.5rem 1.5rem .4rem; }
+    .py-lg-6 { padding-top: 3.5rem; padding-bottom: 3.5rem; }
+}
