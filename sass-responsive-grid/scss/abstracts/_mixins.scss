@@ -1,0 +1,11 @@
+@use "variables" as *;
+
+@mixin full-width-band($color) {
+  width: 100%;
+  background-color: $color;
+  border-right-color: transparent;
+}
+
+@mixin column-width($columns) {
+  width: $grid-cell-width * $columns;
+}

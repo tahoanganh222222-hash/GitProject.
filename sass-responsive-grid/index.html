@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Responsive Grid — Sass refactor</title>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <main class="page">
+    <div class="grid-demo" aria-label="Ví dụ bố cục lưới responsive">
+      <div class="grid-foreground">
+        <div class="grid-wrapper grid-wrapper--banner">
+          <div class="grid-content grid-content--full grid-content--purple grid-content--transparent-edge"></div>
+        </div>
+        <div class="grid-wrapper grid-wrapper--content">
+          <div class="grid-content grid-content--quarter grid-content--white grid-content--padded-top">
+            <div class="grid-widget"></div><div class="grid-widget"></div><div class="grid-widget"></div><div class="grid-widget grid-widget--last"></div>
+          </div>
+          <div class="grid-content grid-content--white"></div>
+          <div class="grid-content grid-content--white"></div>
+          <div class="grid-content grid-content--white"></div>
+          <div class="grid-content grid-content--white"></div>
+          <div class="grid-content grid-content--white"></div>
+          <div class="grid-content grid-content--white"></div>
+          <div class="grid-content grid-content--quarter grid-content--white grid-content--padded-top"><div class="grid-widget grid-widget--tall"></div></div>
+        </div>
+        <div class="grid-wrapper grid-wrapper--footer">
+          <div class="grid-content grid-content--full grid-content--footer"></div>
+        </div>
+      </div>
+      <div class="grid-guides" aria-hidden="true">
+        <div class="grid-wrapper">
+          <div class="grid-content"></div><div class="grid-content"></div><div class="grid-content"></div>
+          <div class="grid-content"></div><div class="grid-content"></div><div class="grid-content"></div>
+          <div class="grid-content"></div><div class="grid-content"></div><div class="grid-content"></div>
+          <div class="grid-content"></div><div class="grid-content"></div><div class="grid-content"></div>
+        </div>
+      </div>
+    </div>
+    <p class="page-description">Thay đổi kích thước cửa sổ để xem lưới co giãn theo chiều rộng màn hình và luôn sử dụng toàn bộ không gian có sẵn.</p>
+  </main>
+</body>
+</html>
