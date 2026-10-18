@@ -1,0 +1,136 @@
+:root {
+    color-scheme: light;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #243447;
+    background: #f2f6fa;
+}
+
+* { box-sizing: border-box; }
+
+body {
+    margin: 0;
+    padding: 36px 16px 56px;
+}
+
+.page {
+    width: min(100%, 920px);
+    margin: 0 auto;
+}
+
+.page-header {
+    margin-bottom: 24px;
+    padding: 28px 30px;
+    border-radius: 14px;
+    background: linear-gradient(130deg, #154d68, #317d83);
+    color: #fff;
+}
+
+.page-header h1 {
+    margin: 4px 0 8px;
+    font-size: clamp(28px, 5vw, 40px);
+}
+
+.page-header p { margin: 0; }
+.page-header .eyebrow {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: .14em;
+    opacity: .82;
+}
+
+.card {
+    margin: 18px 0;
+    padding: 22px 26px;
+    border: 1px solid #dbe4ec;
+    border-radius: 12px;
+    background: #fff;
+    box-shadow: 0 4px 14px rgba(27, 55, 78, .045);
+}
+
+.card h2 {
+    margin: 0 0 14px;
+    color: #174a67;
+    font-size: 20px;
+}
+
+.card h3 {
+    margin: 0 0 8px;
+    color: #426276;
+    font-size: 15px;
+}
+
+.square-list { list-style-type: square; }
+.roman-list { list-style-type: upper-roman; }
+.image-list { list-style-image: url("list-marker.svg"); }
+
+.square-list, .roman-list, .image-list {
+    margin: 0;
+    padding-left: 30px;
+    line-height: 1.9;
+}
+
+.position-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 22px;
+}
+
+.position-grid > div {
+    min-width: 0;
+    padding: 16px;
+    border-radius: 8px;
+    background: #f5f8fa;
+}
+
+.outside-list, .inside-list {
+    max-width: 300px;
+    margin: 0;
+    padding-left: 25px;
+    list-style-type: disc;
+    line-height: 1.6;
+}
+
+.outside-list { list-style-position: outside; }
+.inside-list { list-style-position: inside; }
+.outside-list li, .inside-list li { margin: 0 0 10px; }
+
+/* Shorthand sets type, position, and image together; type is the fallback. */
+.shorthand-list {
+    margin: 0;
+    padding: 8px 8px 8px 30px;
+    list-style: disc outside url("list-marker.svg");
+    line-height: 1.9;
+}
+
+.color-list {
+    margin: 0;
+    padding: 16px 18px 16px 42px;
+    border-radius: 8px;
+    background-color: #e6f3ee;
+    color: #17634f;
+    list-style: circle outside;
+}
+
+.color-list li {
+    margin: 7px 0;
+    padding: 4px 8px;
+}
+
+.roadmap-card { border-left: 5px solid #e1a14a; }
+.roadmap-list {
+    margin: 0;
+    padding: 16px 20px 16px 48px;
+    border-radius: 8px;
+    background-color: #fff4df;
+    color: #654a1f;
+    list-style: upper-alpha inside;
+    line-height: 1.8;
+}
+
+.roadmap-list li { margin: 5px 0; }
+
+@media (max-width: 620px) {
+    body { padding: 18px 12px 36px; }
+    .page-header, .card { padding: 20px; }
+    .position-grid { grid-template-columns: 1fr; }
+}
