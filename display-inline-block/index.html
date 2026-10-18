@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bố cục trang web với display</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="page-header">
+        <p class="eyebrow">THỰC HÀNH HTML &amp; CSS</p>
+        <h1>Bố cục trang web với display</h1>
+        <p class="subtitle">Sắp xếp nội dung bằng block, inline-block, width và max-width.</p>
+    </header>
+
+    <nav class="main-nav" aria-label="Điều hướng chính">
+        <a class="active" href="#home">Trang chủ</a>
+        <a href="#about">Giới thiệu</a>
+        <a href="#services">Dịch vụ</a>
+        <a href="#contact">Liên hệ</a>
+    </nav>
+
+    <main id="home">
+        <section class="intro-section" id="about">
+            <h2>Bố cục linh hoạt, dễ theo dõi</h2>
+            <p>Các khối nội dung được đặt cạnh nhau bằng <code>display: inline-block</code>. Thử thay đổi kích thước cửa sổ để xem các cột tự điều chỉnh.</p>
+        </section>
+
+        <section class="columns-section" id="services" aria-label="Ba cột nội dung">
+            <article class="box box-blue">
+                <span class="box-number">01</span>
+                <h2>Cột 1</h2>
+                <p>Phần tử dạng block bắt đầu trên một dòng mới và thường chiếm toàn bộ chiều rộng có sẵn.</p>
+                <a href="#contact">Tìm hiểu thêm →</a>
+            </article>
+            <article class="box box-violet">
+                <span class="box-number">02</span>
+                <h2>Cột 2</h2>
+                <p>Phần tử inline-block nằm cạnh các phần tử khác, đồng thời vẫn cho phép đặt width và padding.</p>
+                <a href="#contact">Tìm hiểu thêm →</a>
+            </article>
+            <article class="box box-green">
+                <span class="box-number">03</span>
+                <h2>Cột 3</h2>
+                <p>width đặt kích thước cột, còn max-width giới hạn độ rộng tối đa để nội dung dễ đọc.</p>
+                <a href="#contact">Tìm hiểu thêm →</a>
+            </article>
+        </section>
+    </main>
+
+    <footer id="contact">
+        <p>Bản quyền © 2026 · Bố cục trang web với display</p>
+    </footer>
+</body>
+</html>
