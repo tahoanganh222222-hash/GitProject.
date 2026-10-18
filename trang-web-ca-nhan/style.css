@@ -1,0 +1,114 @@
+* { box-sizing: border-box; }
+
+body {
+    margin: 0;
+    padding: 36px 16px;
+    background-color: #eaf2ef;
+    background-image: radial-gradient(circle at 85% 8%, rgba(76, 175, 80, .15), transparent 26rem), linear-gradient(135deg, #f4f7f5, #e6eff0);
+    color: #2e3b36;
+    font-family: Arial, sans-serif;
+}
+
+.profile-page {
+    width: min(100%, 820px);
+    margin: 0 auto;
+}
+
+header {
+    padding: 28px 32px;
+    border: 1px solid #3d9344;
+    border-radius: 14px;
+    background-color: #4CAF50;
+    color: white;
+    box-shadow: 0 8px 22px rgba(28, 91, 40, .16);
+}
+
+header h1 {
+    margin: 4px 0 0;
+    font-size: clamp(26px, 4vw, 36px);
+    line-height: 1.2;
+}
+
+.eyebrow {
+    margin: 0;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: .14em;
+    opacity: .85;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 26px;
+    margin: 22px 0;
+    padding: 24px;
+    border: 1px solid #d5e1d8;
+    border-radius: 14px;
+    background-color: rgba(255, 255, 255, .94);
+}
+
+.avatar {
+    flex: 0 0 auto;
+    width: 150px;
+    height: 150px;
+    margin: 0;
+    border: 4px solid #4CAF50;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profile h2, .content-card h2 {
+    margin: 0 0 12px;
+    color: #347b3a;
+}
+
+.profile p, .content-card p { margin: 0; line-height: 1.7; }
+
+.content-card {
+    margin: 18px 0;
+    padding: 22px 26px;
+    border: 1px solid #d5e1d8;
+    border-radius: 14px;
+    background-color: rgba(255, 255, 255, .94);
+    box-shadow: 0 4px 14px rgba(37, 74, 47, .05);
+}
+
+ul {
+    display: inline-block;
+    margin: 0;
+    padding: 0 0 0 24px;
+    color: #35483a;
+    list-style-type: square;
+    text-align: left;
+    line-height: 1.9;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    overflow: hidden;
+    border: 1px solid #9eb9a3;
+}
+
+th, td {
+    padding: 12px 14px;
+    border: 1px solid #b8cabb;
+    text-align: left;
+}
+
+th {
+    width: 140px;
+    background-color: #4CAF50;
+    color: white;
+}
+
+td { background-color: #f5f8f5; }
+a { color: #276b37; }
+a:hover { color: #174b24; }
+
+@media (max-width: 560px) {
+    body { padding: 18px 12px; }
+    header, .content-card { padding: 20px; }
+    .profile { flex-direction: column; align-items: flex-start; padding: 20px; }
+}
