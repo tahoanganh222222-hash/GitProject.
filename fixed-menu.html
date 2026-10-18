@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hướng dẫn tạo Fixed Menu</title>
+    <style>
+        * { box-sizing: border-box; }
+
+        html { scroll-behavior: smooth; }
+
+        body {
+            margin: 0;
+            background: #f4f6f8;
+            color: #263442;
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.6;
+        }
+
+        .navbar {
+            position: fixed;
+            z-index: 10;
+            top: 0;
+            left: 0;
+            width: 100%;
+            overflow: hidden;
+            background-color: #333;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, .18);
+        }
+
+        .navbar a {
+            float: left;
+            display: block;
+            padding: 14px 18px;
+            color: #f2f2f2;
+            text-align: center;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        .navbar a:hover, .navbar a:focus-visible {
+            background-color: #e4ecef;
+            color: #243746;
+        }
+
+        .main {
+            width: min(100%, 900px);
+            min-height: 1500px;
+            margin: 0 auto;
+            padding: 86px 24px 100px;
+        }
+
+        .hero, .content-section {
+            margin-bottom: 24px;
+            padding: 26px;
+            border: 1px solid #d9e1e7;
+            border-radius: 12px;
+            background: #fff;
+        }
+
+        h1 { margin-top: 0; color: #174a68; }
+        h2 { color: #285f78; }
+        .content-section { min-height: 230px; scroll-margin-top: 76px; }
+
+        .footer {
+            position: fixed;
+            z-index: 10;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            padding: 12px 20px;
+            background-color: #333;
+            color: #f2f2f2;
+            text-align: center;
+        }
+
+        .footer p { margin: 0; }
+
+        @media (max-width: 520px) {
+            .navbar a { padding: 13px 11px; font-size: 15px; }
+            .main { padding: 74px 14px 90px; }
+            .hero, .content-section { padding: 20px; }
+        }
+    </style>
+</head>
+<body>
+    <header class="navbar">
+        <nav aria-label="Điều hướng chính">
+            <a href="#home">Home</a>
+            <a href="#news">News</a>
+            <a href="#contact">Contact</a>
+            <a href="#about">About</a>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="hero" id="home">
+            <h1>Fixed Top Menu</h1>
+            <h2>Scroll this page to see the effect</h2>
+            <p>The navigation bar will stay at the top of the page while scrolling.</p>
+            <p>Cuộn xuống để quan sát thanh điều hướng và footer luôn cố định trên màn hình.</p>
+        </section>
+
+        <section class="content-section" id="news">
+            <h2>News</h2>
+            <p>Some text some text some text some text...</p>
+            <p>Some text some text some text some text...</p>
+        </section>
+
+        <section class="content-section" id="contact">
+            <h2>Contact</h2>
+            <p>Thông tin liên hệ và các cập nhật mới sẽ được đặt tại đây.</p>
+        </section>
+
+        <section class="content-section" id="about">
+            <h2>About</h2>
+            <p>Trang minh họa cách dùng position: fixed để giữ menu ở trên cùng và footer ở dưới cùng khi cuộn trang.</p>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>© 2026 Open Source Records</p>
+    </footer>
+</body>
+</html>
