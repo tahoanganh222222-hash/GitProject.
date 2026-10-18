@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Trang chủ MyWebsite - khám phá ý tưởng và dịch vụ sáng tạo.">
+    <title>MyWebsite | Trang chủ</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#home"><i class="fas fa-house me-2"></i>MyWebsite</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Mở menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+                    <li class="nav-item"><a class="nav-link" href="#home">Trang chủ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">Giới thiệu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Dịch vụ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Liên hệ</a></li>
+                    <li class="nav-item ms-lg-3"><a class="btn btn-outline-light btn-sm rounded-pill px-3" href="#contact">Bắt đầu <i class="fas fa-arrow-right ms-1"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main id="home">
+        <section class="hero-wrap" aria-label="Ảnh giới thiệu">
+            <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&amp;fit=crop&amp;w=2000&amp;q=85" class="d-block w-100 hero-image" alt="Không gian làm việc sáng tạo, hiện đại">
+                        <div class="carousel-caption text-start">
+                            <span class="hero-label">Ý tưởng tạo nên khác biệt</span>
+                            <h1>Chào mừng đến với MyWebsite</h1>
+                            <p class="d-none d-sm-block">Cùng khám phá những giải pháp hữu ích cho công việc và cuộc sống.</p>
+                            <a href="#services" class="btn btn-primary btn-lg rounded-pill">Khám phá ngay <i class="fas fa-arrow-right ms-2"></i></a>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&amp;fit=crop&amp;w=2000&amp;q=85" class="d-block w-100 hero-image" alt="Bàn làm việc gọn gàng với máy tính và cây xanh">
+                        <div class="carousel-caption text-start">
+                            <span class="hero-label">Không gian cho sáng tạo</span>
+                            <h2>Biến ý tưởng thành hành động</h2>
+                            <p class="d-none d-sm-block">Tìm cảm hứng mới và bắt đầu hành trình của bạn hôm nay.</p>
+                            <a href="#about" class="btn btn-light btn-lg rounded-pill">Tìm hiểu thêm <i class="fas fa-arrow-right ms-2"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev" aria-label="Ảnh trước">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next" aria-label="Ảnh tiếp theo">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                </button>
+            </div>
+        </section>
+
+        <section id="about" class="welcome-section d-flex justify-content-center align-items-center text-center bg-light py-5 px-3">
+            <div class="welcome-copy">
+                <span class="eyebrow">Xin chào bạn</span>
+                <h2 class="mt-2">Một nơi để ý tưởng phát triển</h2>
+                <p class="text-secondary mb-0">MyWebsite chia sẻ kiến thức, công cụ và dịch vụ giúp bạn làm việc hiệu quả hơn mỗi ngày.</p>
+            </div>
+        </section>
+
+        <section id="services" class="services-section py-5">
+            <div class="container py-lg-3">
+                <div class="text-center mb-4 mb-lg-5">
+                    <span class="eyebrow">Chúng tôi mang đến</span>
+                    <h2 class="section-title mt-2">Dịch vụ nổi bật</h2>
+                </div>
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <article class="service-card h-100">
+                            <div class="service-icon"><i class="fas fa-lightbulb"></i></div>
+                            <h3>Ý tưởng sáng tạo</h3>
+                            <p>Gợi mở cách tiếp cận mới để biến những kế hoạch thành kết quả cụ thể.</p>
+                        </article>
+                    </div>
+                    <div class="col-md-4">
+                        <article class="service-card h-100">
+                            <div class="service-icon"><i class="fas fa-laptop-code"></i></div>
+                            <h3>Giải pháp số</h3>
+                            <p>Công cụ và kiến thức thiết thực giúp công việc của bạn đơn giản hơn.</p>
+                        </article>
+                    </div>
+                    <div class="col-md-4">
+                        <article class="service-card h-100">
+                            <div class="service-icon"><i class="fas fa-people-group"></i></div>
+                            <h3>Đồng hành cùng bạn</h3>
+                            <p>Chia sẻ kinh nghiệm và hỗ trợ bạn trong từng bước phát triển.</p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section py-5 bg-light">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-7 col-xl-6">
+                        <div class="contact-card">
+                            <div class="text-center mb-4">
+                                <span class="eyebrow">Kết nối với chúng tôi</span>
+                                <h2 class="section-title mt-2">Gửi lời nhắn</h2>
+                                <p class="text-secondary">Để lại thông tin, chúng tôi sẽ liên hệ với bạn.</p>
+                            </div>
+                            <form action="#contact" method="get">
+                                <div class="mb-3">
+                                    <label for="name" class="form-label">Tên của bạn</label>
+                                    <input type="text" class="form-control form-control-lg" id="name" name="name" placeholder="Nhập tên của bạn" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">Email</label>
+                                    <input type="email" class="form-control form-control-lg" id="email" name="email" placeholder="ten@example.com" required>
+                                </div>
+                                <div class="mb-4">
+                                    <label for="message" class="form-label">Nội dung</label>
+                                    <textarea class="form-control" id="message" name="message" rows="4" placeholder="Bạn muốn chia sẻ điều gì?"></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary btn-lg w-100">Gửi liên hệ <i class="fas fa-paper-plane ms-2"></i></button>
+                                <p class="form-text text-center mt-3 mb-0">Thông tin của bạn chỉ được dùng để phản hồi liên hệ.</p>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer py-4">
+        <div class="container d-flex flex-column flex-sm-row justify-content-between align-items-center gap-2">
+            <a class="navbar-brand fw-bold text-white mb-0" href="#home"><i class="fas fa-house me-2"></i>MyWebsite</a>
+            <p class="text-white-50 small mb-0">© 2026 MyWebsite. Đã đăng ký bản quyền.</p>
+            <div class="social-links d-flex gap-3">
+                <a href="#contact" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#contact" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#contact" aria-label="Email"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
