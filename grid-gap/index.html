@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid — grid-gap</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="page">
+        <header class="page-header">
+            <p class="eyebrow">THỰC HÀNH CSS GRID</p>
+            <h1>Thuộc tính <code>grid-gap</code></h1>
+            <p>Thiết lập khoảng cách giữa các hàng và cột trong Grid.</p>
+        </header>
+
+        <section class="example" aria-labelledby="example-one">
+            <div class="example-heading"><div><span class="example-number">01</span><h2>Khoảng cách hàng và cột bằng nhau</h2></div><code>grid-gap: 20px;</code></div>
+            <p class="description">Một giá trị duy nhất áp dụng cho cả khoảng cách giữa hàng và giữa cột.</p>
+            <div class="grid-container equal-gap">
+                <div>Ô 1</div><div>Ô 2</div><div>Ô 3</div><div>Ô 4</div>
+            </div>
+            <p class="equivalent">Tương đương với <code>grid-row-gap: 20px;</code> và <code>grid-column-gap: 20px;</code>.</p>
+        </section>
+
+        <section class="example" aria-labelledby="example-two">
+            <div class="example-heading"><div><span class="example-number">02</span><h2>Khoảng cách hàng và cột khác nhau</h2></div><code>grid-gap: 30px 10px;</code></div>
+            <p class="description">Giá trị thứ nhất đặt khoảng cách hàng là 30px; giá trị thứ hai đặt khoảng cách cột là 10px.</p>
+            <div class="grid-container different-gap">
+                <div>Ô 1</div><div>Ô 2</div><div>Ô 3</div><div>Ô 4</div><div>Ô 5</div><div>Ô 6</div>
+            </div>
+            <p class="equivalent">Tương đương với <code>grid-row-gap: 30px;</code> và <code>grid-column-gap: 10px;</code>.</p>
+        </section>
+
+        <aside class="modern-note"><span aria-hidden="true">i</span><p>Trong CSS hiện đại, <code>gap</code> là cách viết phổ biến hơn và có thể dùng với Grid lẫn Flexbox.</p></aside>
+        <footer>CSS Grid · So sánh khoảng cách giữa hàng và cột</footer>
+    </main>
+</body>
+</html>

@@ -1,0 +1,25 @@
+* { box-sizing: border-box; }
+:root { font-family: Arial, Helvetica, sans-serif; color: #26354b; background: #f3f5f9; }
+body { margin: 0; padding: 40px 20px; }
+.page { max-width: 920px; margin: 0 auto; }
+.page-header { margin-bottom: 28px; text-align: center; }
+.eyebrow { margin: 0 0 9px; color: #586dc6; font-size: 10px; font-weight: 800; letter-spacing: .15em; }
+h1 { margin: 0; font-size: clamp(28px, 5vw, 40px); letter-spacing: -.04em; }
+h1 code { color: #455cbb; font-size: .84em; }
+.page-header > p:last-child { margin: 10px 0 0; color: #758196; font-size: 14px; }
+.example { margin: 16px 0; padding: 21px; border: 1px solid #e4e8ef; border-radius: 12px; background: #fff; box-shadow: 0 7px 22px rgb(36 50 75 / 5%); }
+.example-heading { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.example-heading > div { display: flex; align-items: center; gap: 10px; }
+.example-number { display: grid; place-items: center; flex: 0 0 30px; height: 30px; border-radius: 9px; color: #5366be; background: #eff1ff; font-size: 10px; font-weight: 800; }
+h2 { margin: 0; font-size: 17px; }
+.example-heading > code { padding: 7px 9px; border-radius: 6px; color: #4b5db2; background: #f0f2ff; font-size: 11px; white-space: nowrap; }
+.description, .equivalent { margin: 10px 0 14px; color: #6c798d; font-size: 12px; line-height: 1.6; }
+.grid-container { display: grid; }
+.equal-gap { grid-template-columns: repeat(2, minmax(0, 1fr)); grid-gap: 20px; }
+.different-gap { grid-template-columns: repeat(3, minmax(0, 1fr)); grid-gap: 30px 10px; }
+.grid-container > div { display: grid; place-items: center; min-height: 78px; padding: 12px; border: 1px solid #d4e4f0; border-radius: 8px; color: #35566f; background: lightblue; font-size: 14px; font-weight: 700; }
+.different-gap > div { border-color: #d2e8d4; color: #3d6043; background: lightgreen; }
+.equivalent { margin: 12px 0 0; color: #778397; font-size: 11px; }.equivalent code { color: #5164bd; }
+.modern-note { display: flex; align-items: flex-start; gap: 10px; margin-top: 18px; padding: 14px; border: 1px solid #e4e8f4; border-radius: 9px; background: #f9faff; }.modern-note > span { display: grid; flex: 0 0 20px; place-items: center; height: 20px; border-radius: 50%; color: #fff; background: #6979cf; font-size: 12px; font-weight: 700; }.modern-note p { margin: 0; color: #69768b; font-size: 12px; line-height: 1.6; }.modern-note code { color: #4b5db2; }
+footer { margin-top: 21px; color: #8994a3; font-size: 11px; text-align: center; }
+@media (max-width: 560px) { body { padding: 28px 13px; }.example { padding: 16px; }.example-heading { align-items: flex-start; flex-direction: column; }.grid-container > div { min-height: 65px; }.different-gap { grid-gap: 24px 8px; } }
