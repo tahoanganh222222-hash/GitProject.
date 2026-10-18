@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng ký người dùng</title>
+    <style>
+        * { box-sizing: border-box; }
+        body {
+            margin: 0;
+            padding: 40px 16px;
+            background: #f1f5f9;
+            color: #243247;
+            font-family: Arial, sans-serif;
+        }
+        .registration-card {
+            width: 100%;
+            max-width: 480px;
+            margin: 0 auto;
+            padding: 28px;
+            background: #fff;
+            border: 1px solid #d9e2ec;
+            border-radius: 12px;
+            box-shadow: 0 8px 24px rgba(28, 49, 74, 0.08);
+        }
+        h1 {
+            margin: 0 0 24px;
+            color: #174a7e;
+            text-align: center;
+            font-size: 26px;
+        }
+        .field { margin-bottom: 18px; }
+        .field-label, legend {
+            display: block;
+            margin-bottom: 7px;
+            font-weight: 700;
+        }
+        input[type="text"], input[type="email"], input[type="tel"] {
+            width: 100%;
+            padding: 11px 12px;
+            border: 1px solid #b8c5d3;
+            border-radius: 6px;
+            font: inherit;
+        }
+        fieldset {
+            margin: 0 0 20px;
+            padding: 12px 14px;
+            border: 1px solid #b8c5d3;
+            border-radius: 6px;
+        }
+        fieldset label { margin-right: 18px; }
+        button {
+            width: 100%;
+            padding: 12px;
+            border: 0;
+            border-radius: 6px;
+            background: #1769aa;
+            color: #fff;
+            font: inherit;
+            font-weight: 700;
+            cursor: pointer;
+        }
+        button:hover { background: #11558b; }
+    </style>
+</head>
+<body>
+    <main class="registration-card">
+        <h1>Đăng ký người dùng</h1>
+        <form action="http://demo.codegym.vn/6/registration_form/register.php" method="POST">
+            <div class="field">
+                <label class="field-label" for="name">Họ và tên</label>
+                <input type="text" id="name" name="name" autocomplete="name" required>
+            </div>
+            <div class="field">
+                <label class="field-label" for="email">Email</label>
+                <input type="email" id="email" name="email" autocomplete="email" required>
+            </div>
+            <div class="field">
+                <label class="field-label" for="phone">Số điện thoại</label>
+                <input type="tel" id="phone" name="phone" autocomplete="tel" required>
+            </div>
+            <fieldset>
+                <legend>Giới tính</legend>
+                <label><input type="radio" name="gender" value="Nam" required> Nam</label>
+                <label><input type="radio" name="gender" value="Nữ"> Nữ</label>
+            </fieldset>
+            <button type="submit">Đăng ký</button>
+        </form>
+    </main>
+</body>
+</html>
