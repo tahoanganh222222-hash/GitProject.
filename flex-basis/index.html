@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Flexbox — flex-basis</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="page">
+        <header class="page-header">
+            <p class="eyebrow">THỰC HÀNH CSS FLEXBOX</p>
+            <h1>Thuộc tính <code>flex-basis</code></h1>
+            <p>Kích thước cơ sở của Flex Item được tính theo trục chính của Flex Container.</p>
+        </header>
+
+        <section class="example">
+            <div class="example-heading"><div><span class="number">01</span><h2>Kích thước cơ sở bằng px</h2></div><code>200px · 100px · 150px</code></div>
+            <p class="description">Với <code>flex-direction: row</code>, flex-basis xác định kích thước theo chiều ngang.</p>
+            <div class="flex-demo pixel-demo">
+                <div class="flex-item item-a"><strong>Item 1</strong><small>flex-basis: 200px</small></div>
+                <div class="flex-item item-b"><strong>Item 2</strong><small>flex-basis: 100px</small></div>
+                <div class="flex-item item-c"><strong>Item 3</strong><small>flex-basis: 150px</small></div>
+            </div>
+        </section>
+
+        <section class="example">
+            <div class="example-heading"><div><span class="number">02</span><h2>Thay đổi theo flex-direction</h2></div><code>flex-direction: column;</code></div>
+            <p class="description">Khi trục chính chuyển thành chiều dọc, <code>flex-basis: 100px</code> xác định kích thước theo chiều dọc.</p>
+            <div class="flex-demo column-demo">
+                <div class="flex-item item-green"><strong>Item 1</strong><small>flex-basis: 100px</small></div>
+                <div class="flex-item item-green"><strong>Item 2</strong><small>flex-basis: 100px</small></div>
+                <div class="flex-item item-green"><strong>Item 3</strong><small>flex-basis: 100px</small></div>
+            </div>
+        </section>
+
+        <section class="example">
+            <div class="example-heading"><div><span class="number">03</span><h2>Kích thước cơ sở theo phần trăm</h2></div><code>flex-basis: 50%;</code></div>
+            <p class="description">Mỗi item bắt đầu với kích thước cơ sở bằng 50% chiều rộng container. Flexbox có thể co item để vừa cả khoảng gap.</p>
+            <div class="flex-demo percent-demo">
+                <div class="flex-item item-coral"><strong>Item 1</strong><small>flex-basis: 50%</small></div>
+                <div class="flex-item item-coral"><strong>Item 2</strong><small>flex-basis: 50%</small></div>
+            </div>
+        </section>
+
+        <section class="example">
+            <div class="example-heading"><div><span class="number">04</span><h2>Kết hợp flex-basis và flex-grow</h2></div><code>flex-grow: 1 : 2 : 1</code></div>
+            <p class="description">Các item bắt đầu từ 100px; phần không gian dư được chia theo tỉ lệ grow 1 : 2 : 1.</p>
+            <div class="flex-demo grow-demo">
+                <div class="flex-item grow-one"><strong>Item 1</strong><small>basis 100px · grow 1</small></div>
+                <div class="flex-item grow-two"><strong>Item 2</strong><small>basis 100px · grow 2</small></div>
+                <div class="flex-item grow-three"><strong>Item 3</strong><small>basis 100px · grow 1</small></div>
+            </div>
+        </section>
+
+        <section class="example global-example">
+            <div class="example-heading"><div><span class="number">05</span><h2>Giá trị auto, initial và inherit</h2></div></div>
+            <div class="global-grid">
+                <article class="global-card"><strong>auto</strong><code>flex-basis: auto;</code><p>Lấy kích thước từ width hoặc nội dung.</p><div class="mini-flex auto-demo"><span>Item A</span><span>Item B</span></div></article>
+                <article class="global-card"><strong>initial</strong><code>flex-basis: initial;</code><p>Trở về giá trị mặc định là auto.</p><div class="mini-flex initial-demo"><span>Item A</span><span>Item B</span></div></article>
+                <article class="global-card inherit-card"><strong>inherit</strong><code>flex-basis: inherit;</code><p>Kế thừa flex-basis 140px từ container cha.</p><div class="mini-flex inherit-demo"><span>Item A</span><span>Item B</span></div></article>
+            </div>
+        </section>
+
+        <footer>Flexbox · flex-basis đặt kích thước cơ sở trước khi phân phối không gian trống hoặc co item.</footer>
+    </main>
+</body>
+</html>
