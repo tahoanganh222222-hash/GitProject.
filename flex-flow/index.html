@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Flexbox — flex-flow</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="page">
+        <header class="page-header">
+            <p class="eyebrow">THỰC HÀNH CSS FLEXBOX</p>
+            <h1>Thuộc tính <code>flex-flow</code></h1>
+            <p>Thuộc tính viết tắt kết hợp <code>flex-direction</code> và <code>flex-wrap</code>.</p>
+        </header>
+
+        <section class="example">
+            <div class="example-heading"><div><span class="number">01</span><h2>Hàng theo hướng thông thường</h2></div><code>flex-flow: row nowrap;</code></div>
+            <p class="description">Các item xếp từ trái sang phải trên cùng một hàng, không xuống dòng.</p>
+            <div class="demo-frame">
+                <div class="container container-one">
+                    <div class="item item-blue"><span>01</span>Item 1</div>
+                    <div class="item item-blue"><span>02</span>Item 2</div>
+                    <div class="item item-blue"><span>03</span>Item 3</div>
+                </div>
+            </div>
+            <div class="property-pills"><span>direction: row</span><span>wrap: nowrap</span><span>→</span></div>
+        </section>
+
+        <section class="example">
+            <div class="example-heading"><div><span class="number">02</span><h2>Hàng theo hướng ngược lại</h2></div><code>flex-flow: row-reverse nowrap;</code></div>
+            <p class="description">Các item vẫn nằm trên một hàng, nhưng hướng trục chính đảo chiều.</p>
+            <div class="demo-frame">
+                <div class="container container-two">
+                    <div class="item item-green"><span>01</span>Item 1</div>
+                    <div class="item item-green"><span>02</span>Item 2</div>
+                    <div class="item item-green"><span>03</span>Item 3</div>
+                </div>
+            </div>
+            <div class="property-pills"><span>direction: row-reverse</span><span>wrap: nowrap</span><span>←</span></div>
+        </section>
+
+        <aside class="note"><span>i</span><p><code>flex-flow</code> được khai báo trên Flex Container. Ví dụ này cố định kích thước item để minh họa rõ hướng sắp xếp.</p></aside>
+        <footer>CSS Flexbox · flex-flow = flex-direction + flex-wrap</footer>
+    </main>
+</body>
+</html>
