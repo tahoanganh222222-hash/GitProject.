@@ -1,0 +1,26 @@
+:root { --nova-blue: #4169e1; }
+body { min-height: 100vh; }
+.navbar-brand { letter-spacing: -.04em; font-size: 1.35rem; }
+.btn-primary { --bs-btn-bg: var(--nova-blue); --bs-btn-border-color: var(--nova-blue); --bs-btn-hover-bg: #3154bd; --bs-btn-hover-border-color: #3154bd; }
+.benefitCarousel, #benefitCarousel { min-height: 530px; }
+#benefitCarousel .carousel-inner { min-height: 530px; }
+.benefit-image { height: 530px; object-fit: cover; filter: brightness(.58); }
+#benefitCarousel .carousel-caption { left: 10%; right: 10%; bottom: 13%; text-shadow: 0 2px 12px rgba(0,0,0,.35); }
+#benefitCarousel .carousel-caption h1, #benefitCarousel .carousel-caption h2 { max-width: 520px; line-height: 1.12; }
+#benefitCarousel .carousel-caption p { max-width: 470px; font-size: 1.03rem; }
+#benefitCarousel .carousel-indicators { margin-bottom: 1.25rem; }
+.card { min-height: 530px; }
+.form-control, .input-group-text { border-color: #dce2ea; }
+.form-control:focus { border-color: #98aef0; box-shadow: 0 0 0 .25rem rgba(65,105,225,.12); }
+@media (max-width: 991.98px) {
+    #benefitCarousel, #benefitCarousel .carousel-inner { min-height: 350px; }
+    .benefit-image { height: 350px; }
+    .card { min-height: auto; }
+}
+@media (max-width: 575.98px) {
+    #benefitCarousel, #benefitCarousel .carousel-inner { min-height: 300px; }
+    .benefit-image { height: 300px; }
+    #benefitCarousel .carousel-caption { left: 12%; right: 12%; bottom: 12%; }
+    #benefitCarousel .carousel-caption h1, #benefitCarousel .carousel-caption h2 { font-size: 1.75rem; }
+    #benefitCarousel .carousel-caption p { font-size: .88rem; }
+}
