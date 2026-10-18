@@ -1,0 +1,41 @@
+:root {
+    --ink: #1c2e42;
+    --blue: #3868d8;
+    --slate: #425466;
+}
+
+html { scroll-behavior: smooth; scroll-padding-top: 76px; }
+body { color: var(--ink); font-family: system-ui, -apple-system, "Segoe UI", sans-serif; }
+.navbar-brand { letter-spacing: -.03em; }
+.eyebrow { color: var(--blue); font-size: .78rem; font-weight: 750; letter-spacing: .12em; text-transform: uppercase; }
+.page-title { font-size: clamp(2rem, 4vw, 2.8rem); font-weight: 750; letter-spacing: -.04em; }
+.column-card { min-height: 220px; border-radius: 1rem; }
+.column-light { background: #edf2fa; color: var(--ink); }
+.column-dark { background: var(--slate); color: #fff; }
+.column-icon { display: grid; place-items: center; width: 3.2rem; height: 3.2rem; margin: 0 auto 1rem; border-radius: 1rem; background: rgba(56, 104, 216, .12); color: var(--blue); font-size: 1.35rem; }
+.column-dark .column-icon { background: rgba(255,255,255,.14); color: #fff; }
+.column-card h2 { font-size: 1.25rem; font-weight: 700; }
+.column-card p { max-width: 290px; color: inherit; opacity: .8; line-height: 1.65; }
+.spacing-section { border-top: 1px solid #e8edf3; border-bottom: 1px solid #e8edf3; }
+.desktop-note { border: 1px solid #f0d46c; border-radius: .75rem; background: #fff4c6; color: #624b00; font-weight: 600; }
+.mobile-note { border: 1px solid #c8dbff; border-radius: .75rem; background: #edf4ff; color: #3159a4; font-weight: 600; }
+.section-heading h2 { font-weight: 750; letter-spacing: -.03em; }
+.gallery-carousel { overflow: hidden; border-radius: 1.25rem; box-shadow: 0 16px 42px rgba(23, 37, 54, .14); }
+.gallery-carousel .carousel-item img { height: 440px; object-fit: cover; filter: brightness(.76); }
+.gallery-carousel .carousel-caption { bottom: 2rem; }
+.gallery-carousel .carousel-caption h3 { font-weight: 700; text-shadow: 0 2px 8px rgba(0,0,0,.5); }
+.gallery-carousel .carousel-caption p { text-shadow: 0 1px 5px rgba(0,0,0,.6); }
+.contact-card { border: 1px solid #e5ebf3; border-radius: 1.25rem; background: #fff; box-shadow: 0 14px 40px rgba(23, 37, 54, .07); }
+.form-label { font-weight: 600; }
+.form-control { border-color: #d8e0e9; }
+.form-control:focus { border-color: #8fa9eb; box-shadow: 0 0 0 .25rem rgba(56, 104, 216, .12); }
+.btn-primary { background: var(--blue); border-color: var(--blue); }
+.btn-primary:hover { background: #2d55b7; border-color: #2d55b7; }
+.site-footer { background: #1c2e42; }
+
+@media (max-width: 767.98px) {
+    .column-card { min-height: 185px; }
+    .gallery-carousel .carousel-item img { height: 270px; }
+    .gallery-carousel .carousel-caption { bottom: .5rem; }
+    .gallery-carousel .carousel-caption h3 { font-size: 1.15rem; }
+}
