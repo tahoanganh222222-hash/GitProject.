@@ -1,0 +1,17 @@
+@use "sass:color";
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+.button {
+  @include button-style($primary-color);
+  display: inline-block;
+  border: 0;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 180ms ease, transform 180ms ease;
+
+  &:hover {
+    background: color.adjust($primary-color, $lightness: -8%);
+    transform: translateY(-2px);
+  }
+}
