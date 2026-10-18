@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bố cục hai cột bằng Float và Clear</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container">
+        <section class="left-column">
+            <p class="eyebrow">NỘI DUNG CHÍNH</p>
+            <h1>Bố cục hai cột bằng Float</h1>
+            <p>Cột bên trái chiếm 60% chiều rộng và chứa nội dung chính của trang. Thuộc tính <code>float: left</code> đặt cột này về phía trái.</p>
+            <p>Float là một cách cổ điển để tạo bố cục cột trong CSS. Phần tử kế tiếp có thể chảy xung quanh phần tử đang được float, vì vậy cần xử lý vùng chứa để nó bao trọn cả hai cột.</p>
+            <div class="example-note">Hai cột bên dưới được tạo bằng <code>float</code>. Phần tử giả của container dùng <code>clear: both</code> để bao quanh chúng.</div>
+        </section>
+
+        <aside class="right-column">
+            <p class="eyebrow">SIDEBAR</p>
+            <h2>Cột bên phải</h2>
+            <p>Cột này chiếm 38% chiều rộng và được căn về phía phải bằng <code>float: right</code>.</p>
+            <ul>
+                <li>Nội dung liên quan</li>
+                <li>Liên kết hữu ích</li>
+                <li>Thông tin bổ sung</li>
+            </ul>
+        </aside>
+    </main>
+</body>
+</html>
