@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Flexbox — flex-grow</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="page">
+        <header class="page-header">
+            <p class="eyebrow">THỰC HÀNH CSS FLEXBOX</p>
+            <h1>Thuộc tính <code>flex-grow</code></h1>
+            <p>Quan sát một Flex Item nhận thêm không gian trong cùng Flex Container.</p>
+        </header>
+
+        <section class="demo-card">
+            <div class="demo-heading"><div><span class="demo-number">01</span><div><p class="eyebrow">VÍ DỤ FLEXBOX</p><h2>Năm Flex Item</h2></div></div><code>Item 2: flex-grow: 1;</code></div>
+            <p class="description">Các item đều có kích thước cơ sở 110px. Item 2 nhận phần không gian còn lại nhờ <code>flex-grow: 1</code>.</p>
+            <div class="scroll-frame">
+                <div class="flex-container">
+                    <div class="item"><span>01</span><strong>Item 1</strong><small>grow: 0</small></div>
+                    <div class="item item-grow"><span>02</span><strong>Item 2</strong><small>grow: 1</small><b class="grows-label">TĂNG TRƯỞNG</b></div>
+                    <div class="item"><span>03</span><strong>Item 3</strong><small>grow: 0</small></div>
+                    <div class="item"><span>04</span><strong>Item 4</strong><small>grow: 0</small></div>
+                    <div class="item"><span>05</span><strong>Item 5</strong><small>grow: 0</small></div>
+                </div>
+            </div>
+            <div class="legend"><span><i></i> Kích thước cơ sở: 110px</span><span><i class="legend-grow"></i> Phần không gian dư được phân cho Item 2</span></div>
+        </section>
+
+        <section class="explanation-card">
+            <span class="info-icon">i</span>
+            <div><h2>Cách đọc kết quả</h2><p><code>flex-grow</code> nhận một hệ số. Item 2 có hệ số 1, còn các item khác mặc định bằng 0, vì vậy Item 2 nhận toàn bộ phần không gian trống trong container.</p></div>
+        </section>
+
+        <footer>Flexbox · flex-grow chỉ tác dụng lên Flex Item trực tiếp bên trong Flex Container.</footer>
+    </main>
+</body>
+</html>
