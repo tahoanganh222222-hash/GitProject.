@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Tìm hiểu các nền tảng công nghệ web và ngôn ngữ lập trình phổ biến.">
+    <title>TechLearn | Công nghệ và lập trình</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar" aria-label="Điều hướng chính">
+        <a class="brand" href="#top" aria-label="TechLearn trang chủ">
+            <span class="brand-symbol">&lt;/&gt;</span><span>Tech<span class="brand-accent">Learn</span></span>
+        </a>
+        <ul class="nav-list">
+            <li><a href="#web">Web Technology</a></li>
+            <li><a href="#program">C Programming</a></li>
+            <li><a href="#java">Java</a></li>
+        </ul>
+        <form class="rightnav" role="search" action="#web">
+            <label class="sr-only" for="search">Tìm kiếm bài học</label>
+            <input type="search" name="search" id="search" placeholder="Tìm bài học...">
+            <button class="btn btn-sm" type="submit">Tìm kiếm</button>
+        </form>
+    </nav>
+
+    <main id="top">
+        <section class="firstsection" id="web">
+            <div class="box-main">
+                <div class="firstHalf">
+                    <span class="eyebrow">Bắt đầu hành trình công nghệ</span>
+                    <h1 class="text-big">Web Technology</h1>
+                    <p class="text-small">HTML tạo nên cấu trúc của trang web, CSS định hình giao diện và JavaScript giúp trang tương tác. Cùng tìm hiểu những nền tảng này để bắt đầu xây dựng sản phẩm web của riêng bạn.</p>
+                    <a class="btn btn-primary" href="#program">Khám phá lộ trình <span aria-hidden="true">→</span></a>
+                </div>
+                <div class="hero-art" aria-hidden="true">
+                    <div class="code-window">
+                        <div class="window-dots"><i></i><i></i><i></i></div>
+                        <pre><span class="code-purple">&lt;html</span> <span class="code-blue">lang</span>=<span class="code-green">"vi"</span><span class="code-purple">&gt;</span>
+  <span class="code-purple">&lt;h1&gt;</span>Xin chào!<span class="code-purple">&lt;/h1&gt;</span>
+  <span class="code-purple">&lt;p&gt;</span>Học bằng cách thực hành.<span class="code-purple">&lt;/p&gt;</span>
+<span class="code-purple">&lt;/html&gt;</span></pre>
+                    </div>
+                    <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+                </div>
+            </div>
+            <div class="hero-foot"><span>01 / NỀN TẢNG WEB</span><a href="#program">Cuộn để khám phá <span aria-hidden="true">↓</span></a></div>
+        </section>
+
+        <section class="topic-section c-section" id="program">
+            <div class="topic-inner">
+                <div class="section-number">01 — NGÔN NGỮ LẬP TRÌNH</div>
+                <div class="topic-copy">
+                    <h2 class="text-big">C Programming</h2>
+                    <p class="text-small">C là ngôn ngữ lập trình thủ tục nổi tiếng với tốc độ và khả năng làm việc gần với phần cứng. Ngôn ngữ này thường được dùng để phát triển hệ điều hành, trình biên dịch và các phần mềm hệ thống.</p>
+                    <ul class="topic-points">
+                        <li><span>01</span> Nắm vững biến, kiểu dữ liệu và vòng lặp</li>
+                        <li><span>02</span> Tìm hiểu hàm và cách tổ chức chương trình</li>
+                        <li><span>03</span> Khám phá cách quản lý bộ nhớ</li>
+                    </ul>
+                    <a class="text-link" href="#java">Tiếp tục tìm hiểu <span aria-hidden="true">↗</span></a>
+                </div>
+                <div class="topic-visual c-visual" role="img" aria-label="Minh họa mã C trên màn hình máy tính">
+                    <div class="terminal-card"><div class="terminal-top"><i></i><i></i><i></i><span>main.c</span></div><pre><span class="code-purple">#include</span> <span class="code-green">&lt;stdio.h&gt;</span>
+
+<span class="code-blue">int</span> main() {
+  printf(<span class="code-green">"Hello, world!"</span>);
+  <span class="code-purple">return</span> 0;
+}</pre></div>
+                    <span class="visual-tag">C / SYSTEMS</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="topic-section java-section" id="java">
+            <div class="topic-inner java-inner">
+                <div class="topic-visual java-visual">
+                    <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&amp;fit=crop&amp;w=1100&amp;q=85" alt="Bảng mạch điện tử với các thành phần máy tính">
+                    <span class="image-caption">BUILD. COMPILE. RUN.</span>
+                </div>
+                <div class="topic-copy">
+                    <div class="section-number">02 — LẬP TRÌNH HƯỚNG ĐỐI TƯỢNG</div>
+                    <h2 class="text-big">Java</h2>
+                    <p class="text-small">Java là ngôn ngữ hướng đối tượng được sử dụng rộng rãi. Mã nguồn Java được biên dịch thành bytecode và chạy trên Java Virtual Machine, nhờ đó có thể hoạt động trên nhiều nền tảng khác nhau.</p>
+                    <div class="java-stats">
+                        <div><strong>OOP</strong><span>Tư duy hướng đối tượng</span></div>
+                        <div><strong>JVM</strong><span>Chạy đa nền tảng</span></div>
+                    </div>
+                    <a class="text-link" href="#web">Quay lại đầu trang <span aria-hidden="true">↑</span></a>
+                </div>
+            </div>
+        </section>
+
+        <section class="closing-section">
+            <p class="eyebrow">Học hôm nay, xây dựng ngày mai</p>
+            <h2>Mỗi dòng code là một bước tiến.</h2>
+            <a href="#web" class="btn btn-primary">Bắt đầu học <span aria-hidden="true">→</span></a>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <a class="brand" href="#top"><span class="brand-symbol">&lt;/&gt;</span><span>Tech<span class="brand-accent">Learn</span></span></a>
+        <p class="text-footer">© 2026 TechLearn — Học công nghệ qua thực hành.</p>
+        <a class="back-top" href="#top">Lên đầu trang ↑</a>
+    </footer>
+</body>
+</html>
