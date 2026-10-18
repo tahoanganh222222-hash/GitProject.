@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bố cục trang web cơ bản</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="main">
+        <div id="head">
+            <div class="brand-block">
+                <div class="brand-mark" aria-hidden="true">W</div>
+                <div><strong>WEB<span>STUDY</span></strong><small>Học tập · Kết nối · Phát triển</small></div>
+            </div>
+            <div class="head-banner">
+                <span class="banner-kicker">CÙNG HỌC MỖI NGÀY</span>
+                <strong>Kiến thức mở ra tương lai</strong>
+                <span class="banner-decoration" aria-hidden="true">✦</span>
+            </div>
+        </div>
+
+        <nav id="head-link" aria-label="Điều hướng chính">
+            <a class="active" href="#home">Trang chủ</a>
+            <a href="#students">Học viên</a>
+            <a href="#courses">Khóa học</a>
+            <a href="#news">Tin tức</a>
+            <a href="#contact">Liên hệ</a>
+        </nav>
+
+        <div class="columns" id="home">
+            <aside id="left">
+                <section class="side-card">
+                    <h2>Danh mục</h2>
+                    <ul class="side-menu">
+                        <li><a href="#courses">Lập trình web</a></li>
+                        <li><a href="#courses">Lập trình Java</a></li>
+                        <li><a href="#courses">Cơ sở dữ liệu</a></li>
+                        <li><a href="#courses">Kỹ năng nghề nghiệp</a></li>
+                    </ul>
+                </section>
+                <section class="side-card quick-links" id="students">
+                    <h2>Dành cho học viên</h2>
+                    <a href="#news">Lịch học tuần này <span>›</span></a>
+                    <a href="#news">Tài liệu học tập <span>›</span></a>
+                    <a href="#contact">Hỗ trợ học viên <span>›</span></a>
+                </section>
+                <div class="left-note"><span aria-hidden="true">✎</span><p><strong>Góc học tập</strong><br>Kiên trì một chút mỗi ngày!</p></div>
+            </aside>
+
+            <main id="content">
+                <section class="welcome-card">
+                    <div><p class="section-label">CHÀO MỪNG BẠN</p><h1>Cùng xây dựng<br>điều tuyệt vời.</h1><p>Khám phá kiến thức, rèn luyện kỹ năng và bắt đầu hành trình của bạn.</p><a class="primary-link" href="#courses">Khám phá khóa học <span>→</span></a></div>
+                    <div class="welcome-illustration" aria-hidden="true"><span class="sun">☼</span><span class="shape shape-one"></span><span class="shape shape-two"></span><span class="book">▤</span></div>
+                </section>
+
+                <section class="content-section" id="news">
+                    <div class="section-heading"><h2>Tin nổi bật</h2><a href="#news-list">Xem tất cả →</a></div>
+                    <article class="feature-news">
+                        <div class="news-art art-blue" aria-hidden="true"><span>⌘</span><small>CODE<br>YOUR<br>FUTURE</small></div>
+                        <div class="news-copy"><span class="news-category">CỘNG ĐỒNG</span><h3>Tuần lễ khám phá công nghệ dành cho học viên</h3><p>Cùng tham gia các hoạt động thực hành, chia sẻ dự án và kết nối với cộng đồng học tập.</p><a href="#contact">Đọc thêm →</a></div>
+                    </article>
+                </section>
+
+                <section class="content-section" id="courses">
+                    <div class="section-heading"><h2>Khóa học được quan tâm</h2><a href="#courses">Tất cả khóa học →</a></div>
+                    <div class="course-grid">
+                        <article class="course-card"><div class="course-art art-peach">HTML <span>&amp;</span> CSS</div><div><small>THIẾT KẾ WEB</small><h3>Nền tảng Web</h3><p>Bắt đầu từ HTML và CSS cơ bản.</p></div></article>
+                        <article class="course-card"><div class="course-art art-lilac">{ JS }</div><div><small>LẬP TRÌNH</small><h3>JavaScript căn bản</h3><p>Tạo trải nghiệm tương tác cho trang web.</p></div></article>
+                    </div>
+                </section>
+            </main>
+
+            <aside id="right">
+                <section class="right-card calendar-card">
+                    <div class="right-card-heading"><h2>Lịch tháng 10</h2><span>2026</span></div>
+                    <div class="calendar" aria-label="Lịch tháng 10 năm 2026">
+                        <span>T2</span><span>T3</span><span>T4</span><span>T5</span><span>T6</span><span>T7</span><span>CN</span>
+                        <span class="muted">28</span><span class="muted">29</span><span class="muted">30</span><span>1</span><span>2</span><span>3</span><span>4</span>
+                        <span>5</span><span>6</span><span>7</span><span>8</span><span>9</span><span>10</span><span>11</span>
+                        <span>12</span><span>13</span><span class="today">14</span><span>15</span><span>16</span><span>17</span><span>18</span>
+                        <span>19</span><span>20</span><span>21</span><span>22</span><span>23</span><span>24</span><span>25</span>
+                        <span>26</span><span>27</span><span>28</span><span>29</span><span>30</span><span>31</span><span class="muted">1</span>
+                    </div>
+                    <p class="calendar-event"><i></i> 14/10 · Workshop HTML &amp; CSS</p>
+                </section>
+                <section class="right-card stats-card">
+                    <h2>Góc thống kê</h2>
+                    <div class="stat-row"><span>Học viên đang học</span><strong>1.280</strong></div>
+                    <div class="stat-row"><span>Khóa học mở</span><strong>24</strong></div>
+                    <div class="stat-bars" aria-label="Biểu đồ hoạt động tuần"><i style="height:35%"></i><i style="height:56%"></i><i style="height:44%"></i><i style="height:78%"></i><i style="height:62%"></i><i style="height:92%"></i><i style="height:70%"></i></div>
+                    <small class="chart-caption">Hoạt động học tập tuần này</small>
+                </section>
+                <section class="right-card contact-card" id="contact"><h2>Kết nối với chúng tôi</h2><p>Nhận tin mới và hoạt động dành cho học viên.</p><a href="mailto:hello@webstudy.example">hello@webstudy.example</a></section>
+            </aside>
+        </div>
+
+        <footer id="footer">
+            <div><strong>WEB<span>STUDY</span></strong><p>Không ngừng học hỏi, không ngừng tiến bước.</p></div>
+            <div class="footer-links"><a href="#home">Trang chủ</a><a href="#courses">Khóa học</a><a href="#contact">Liên hệ</a></div>
+            <small>© 2026 WebStudy. Bản quyền thuộc về WebStudy.</small>
+        </footer>
+    </div>
+</body>
+</html>
