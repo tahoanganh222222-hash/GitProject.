@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bố cục Responsive bằng CSS Grid</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="page-grid">
+        <header class="header">
+            <a class="brand" href="#home"><span class="brand-symbol">G</span><span>Grid<span class="brand-accent">Journal</span></span></a>
+            <span class="header-caption">Góc nhìn mới · Kiến thức mỗi ngày</span>
+            <a class="header-button" href="#footer">Theo dõi chúng tôi <span>↗</span></a>
+        </header>
+
+        <nav class="navigation" aria-label="Điều hướng chính">
+            <a class="active" href="#home">Trang chủ</a>
+            <a href="#articles">Bài viết</a>
+            <a href="#topics">Chủ đề</a>
+            <a href="#about">Giới thiệu</a>
+            <a href="#footer">Liên hệ</a>
+        </nav>
+
+        <main class="main-content" id="home">
+            <section class="featured-article">
+                <div class="featured-art" aria-hidden="true"><span>✦</span><i></i><b></b></div>
+                <div class="featured-copy"><p class="eyebrow">CHỦ ĐỀ NỔI BẬT · 8 PHÚT ĐỌC</p><h1>Ý tưởng tốt bắt đầu từ những bước nhỏ</h1><p>Khám phá cách xây dựng thói quen học tập bền vững, tập trung vào tiến bộ mỗi ngày.</p><a href="#articles" class="read-link">Đọc bài viết <span>→</span></a></div>
+            </section>
+
+            <section class="article-section" id="articles">
+                <div class="section-heading"><div><p class="eyebrow">MỚI NHẤT</p><h2>Bài viết dành cho bạn</h2></div><a href="#articles">Xem tất cả →</a></div>
+                <div class="article-grid">
+                    <article class="article-card"><div class="article-art art-blue"><span>01</span><b>⌘</b></div><div class="article-copy"><span class="category">CÔNG NGHỆ</span><h3>Thiết kế một website dễ sử dụng</h3><p>Những nguyên tắc cơ bản giúp nội dung rõ ràng và dễ tìm.</p><small>12 tháng 10 · 5 phút đọc</small></div></article>
+                    <article class="article-card"><div class="article-art art-peach"><span>02</span><b>✎</b></div><div class="article-copy"><span class="category">HỌC TẬP</span><h3>Lập kế hoạch học tập hiệu quả</h3><p>Chia mục tiêu lớn thành những việc nhỏ có thể hoàn thành.</p><small>10 tháng 10 · 4 phút đọc</small></div></article>
+                    <article class="article-card" id="topics"><div class="article-art art-green"><span>03</span><b>⌁</b></div><div class="article-copy"><span class="category">SÁNG TẠO</span><h3>Nuôi dưỡng sự tò mò mỗi ngày</h3><p>Một câu hỏi hay có thể mở ra nhiều hướng khám phá mới.</p><small>08 tháng 10 · 6 phút đọc</small></div></article>
+                    <article class="article-card"><div class="article-art art-lilac"><span>04</span><b>▤</b></div><div class="article-copy"><span class="category">LÀM VIỆC</span><h3>Tập trung trong thế giới nhiều xao nhãng</h3><p>Tạo không gian phù hợp để dành trọn sự chú ý cho công việc.</p><small>05 tháng 10 · 7 phút đọc</small></div></article>
+                </div>
+            </section>
+        </main>
+
+        <aside class="sidebar" id="about">
+            <section class="sidebar-panel author-panel"><p class="eyebrow">VỀ GRID JOURNAL</p><div class="author-avatar">G</div><h2>Không gian để khám phá</h2><p>Những câu chuyện và ý tưởng về công nghệ, học tập và sáng tạo.</p><a href="#footer">Tìm hiểu thêm →</a></section>
+            <section class="sidebar-panel popular-panel"><p class="eyebrow">ĐƯỢC QUAN TÂM</p><h2>Đọc nhiều tuần này</h2><a href="#articles"><span>01</span><b>Học kỹ năng mới từ đâu?</b></a><a href="#articles"><span>02</span><b>Thiết kế thói quen tích cực</b></a><a href="#articles"><span>03</span><b>Giữ cho ý tưởng luôn mới</b></a></section>
+            <section class="newsletter"><span aria-hidden="true">✉</span><h2>Bản tin mỗi tuần</h2><p>Nhận các bài viết mới trong hộp thư của bạn.</p><a href="mailto:hello@gridjournal.example">Đăng ký qua email</a></section>
+        </aside>
+
+        <footer class="footer" id="footer"><a class="brand footer-brand" href="#home"><span class="brand-symbol">G</span><span>Grid<span class="brand-accent">Journal</span></span></a><span>© 2026 Grid Journal · Bố cục thực hành CSS Grid</span><a href="#home">Lên đầu trang ↑</a></footer>
+    </div>
+</body>
+</html>
