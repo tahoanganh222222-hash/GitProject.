@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thực hành Box Model</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="page">
+        <header>
+            <p class="eyebrow">THỰC HÀNH CSS</p>
+            <h1>Bố cục với Box Model</h1>
+            <p>So sánh cách <code>content-box</code> và <code>border-box</code> tính kích thước thẻ.</p>
+        </header>
+
+        <section class="cards" aria-label="So sánh các thẻ Box Model">
+            <div class="card">
+                <h2>Content-box</h2>
+                <p>width: 280px được áp dụng cho phần nội dung. Padding và border cộng thêm vào kích thước ngoài.</p>
+            </div>
+            <div class="card">
+                <h2>Border-box</h2>
+                <p>width: 280px đã bao gồm nội dung, padding và border.</p>
+            </div>
+            <div class="card">
+                <h2>Border-box</h2>
+                <p>Thẻ thứ ba cũng giữ kích thước 280 × 150px, với nền màu đỏ.</p>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
