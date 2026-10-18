@@ -1,0 +1,80 @@
+/* Bộ chọn phần tử */
+body {
+    margin: 0;
+    min-height: 100vh;
+    padding: 40px 16px;
+    background-color: #eaf1f7;
+    color: #263746;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Bộ chọn class */
+.profile-card {
+    width: min(100%, 620px);
+    margin: 0 auto;
+    padding: 32px;
+    border: 1px solid #d2dde7;
+    border-radius: 14px;
+    background-color: #fff;
+    box-shadow: 0 8px 22px rgba(35, 65, 88, .09);
+}
+
+/* Bộ chọn nhóm */
+h1, h2 {
+    color: #245d7a;
+}
+
+h1 {
+    margin-top: 0;
+    text-align: center;
+}
+
+h2 { margin-bottom: 10px; }
+
+/* Bộ chọn id */
+#about {
+    padding: 14px 16px;
+    border-left: 4px solid #54a18a;
+    background-color: #f0f7f4;
+    line-height: 1.7;
+}
+
+/* Bộ chọn class kết hợp với phần tử */
+.hobby-list {
+    padding-left: 24px;
+    line-height: 2;
+}
+
+.hobby-list li:nth-child(1) { color: #a74f3d; }
+.hobby-list li:nth-child(2) { color: #386d9a; }
+.hobby-list li:nth-child(3) { color: #47804d; }
+.hobby-list li:hover { font-weight: 700; }
+
+button {
+    margin-top: 14px;
+    padding: 11px 20px;
+    border: 0;
+    border-radius: 7px;
+    background-color: #287e70;
+    color: #fff;
+    font: inherit;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color .2s ease, transform .2s ease;
+}
+
+/* Pseudo-classes */
+button:hover {
+    background-color: #1d6257;
+    transform: translateY(-2px);
+}
+
+button:focus-visible {
+    outline: 3px solid #f1ba5a;
+    outline-offset: 3px;
+}
+
+@media (max-width: 520px) {
+    body { padding: 20px 12px; }
+    .profile-card { padding: 24px 20px; }
+}
