@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bố cục Responsive với DIV</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="page">
+        <div class="header">
+            <div class="brand"><span class="brand-icon">R</span><span>RWD<span class="brand-accent">Layout</span></span></div>
+            <div class="header-note">Bố cục thích ứng với mọi màn hình</div>
+        </div>
+
+        <div class="nav">
+            <a class="active" href="#home">Trang chủ</a>
+            <a href="#content">Khám phá</a>
+            <a href="#news">Tin mới</a>
+            <a href="#about">Giới thiệu</a>
+        </div>
+
+        <div class="hero" id="home">
+            <div class="hero-copy">
+                <span class="eyebrow">THIẾT KẾ RESPONSIVE</span>
+                <h1>Một bố cục,<br><span>mọi kích thước.</span></h1>
+                <p>Trang web tự điều chỉnh để nội dung luôn dễ đọc trên máy tính, máy tính bảng và điện thoại.</p>
+                <a href="#content" class="hero-button">Xem nội dung <span>→</span></a>
+            </div>
+            <div class="hero-graphic" aria-hidden="true"><div class="screen screen-back"></div><div class="screen screen-front"><i></i><i></i><i></i><b></b><b></b><b></b></div><span class="graphic-star">✦</span></div>
+        </div>
+
+        <div class="layout" id="content">
+            <div class="sidebar sidebar-left">
+                <div class="panel">
+                    <h2>Danh mục</h2>
+                    <a href="#news">Thiết kế web</a>
+                    <a href="#news">Công nghệ</a>
+                    <a href="#news">Kinh nghiệm</a>
+                    <a href="#news">Tài nguyên</a>
+                </div>
+                <div class="tip-panel"><span>✦</span><strong>Mẹo nhỏ</strong><p>Thu nhỏ cửa sổ để xem cách các cột tự sắp xếp.</p></div>
+            </div>
+
+            <div class="main-content" id="news">
+                <div class="section-title"><div><span class="eyebrow">BÀI VIẾT MỚI</span><h2>Khám phá nội dung</h2></div><a href="#news">Xem tất cả →</a></div>
+                <div class="article-grid">
+                    <div class="article-card"><div class="article-art art-blue"><span>01</span><i>◫</i></div><div class="article-copy"><span>THIẾT KẾ</span><h3>Bắt đầu với bố cục web linh hoạt</h3><p>Tìm hiểu cách sắp xếp nội dung để giao diện dễ sử dụng.</p><a href="#about">Đọc tiếp →</a></div></div>
+                    <div class="article-card"><div class="article-art art-peach"><span>02</span><i>⌘</i></div><div class="article-copy"><span>CÔNG NGHỆ</span><h3>Những điều cần biết về RWD</h3><p>Media queries giúp trang web phù hợp với từng màn hình.</p><a href="#about">Đọc tiếp →</a></div></div>
+                    <div class="article-card"><div class="article-art art-green"><span>03</span><i>⌁</i></div><div class="article-copy"><span>THỰC HÀNH</span><h3>Kiểm tra trang trên điện thoại</h3><p>Kiểm tra chiều rộng, khoảng cách và khả năng đọc.</p><a href="#about">Đọc tiếp →</a></div></div>
+                    <div class="article-card"><div class="article-art art-lilac"><span>04</span><i>▤</i></div><div class="article-copy"><span>TÀI NGUYÊN</span><h3>Tổ chức CSS dễ bảo trì</h3><p>Chia giao diện thành những khối rõ ràng và nhất quán.</p><a href="#about">Đọc tiếp →</a></div></div>
+                </div>
+            </div>
+
+            <div class="sidebar sidebar-right" id="about">
+                <div class="panel about-panel"><h2>Về trang này</h2><p>Ví dụ bố cục responsive được xây dựng bằng các khối DIV và CSS.</p></div>
+                <div class="panel popular-panel"><h2>Được quan tâm</h2><a href="#news"><span>01</span> Thiết kế giao diện</a><a href="#news"><span>02</span> CSS căn bản</a><a href="#news"><span>03</span> Mẹo responsive</a></div>
+                <div class="subscribe-panel"><span class="subscribe-icon">✉</span><h2>Cập nhật mỗi tuần</h2><p>Khám phá thêm các bài viết và tài nguyên mới.</p><a href="mailto:hello@rwdlayout.example">Liên hệ với chúng tôi</a></div>
+            </div>
+        </div>
+
+        <div class="footer"><div class="brand footer-brand"><span class="brand-icon">R</span><span>RWD<span class="brand-accent">Layout</span></span></div><p>Bố cục responsive thực hành với DIV và CSS.</p><span>© 2026 RWD Layout</span></div>
+    </div>
+</body>
+</html>
