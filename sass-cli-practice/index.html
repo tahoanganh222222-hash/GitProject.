@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Thực hành SASS CLI</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <header class="site-header">
+        <nav class="nav container">
+            <a class="brand" href="#home">SASS<span>LAB</span></a>
+            <div class="nav-links"><a href="#home">Trang chủ</a><a href="#features">Tính năng</a><a href="#about">Giới thiệu</a></div>
+        </nav>
+    </header>
+    <main id="home">
+        <section class="hero container">
+            <div class="hero-copy">
+                <p class="eyebrow">Viết gọn hơn · Làm được nhiều hơn</p>
+                <h1>SCSS thành CSS<br><span>chỉ trong một lệnh.</span></h1>
+                <p class="intro">Dùng Sass CLI để biên dịch kiểu giao diện, rồi bật chế độ theo dõi để CSS được cập nhật khi SCSS thay đổi.</p>
+                <a class="button" href="#features">Xem ví dụ <span>→</span></a>
+            </div>
+            <div class="code-card" aria-label="Ví dụ cú pháp SCSS">
+                <div class="code-bar"><span></span><span></span><span></span><small>main.scss</small></div>
+                <pre><code><b>$accent</b>: #86efac;
+
+.hero {
+  padding: 4rem 0;
+  h1 {
+    color: $accent;
+  }
+}</code></pre>
+                <div class="compile-status"><span>✓</span> compiled successfully</div>
+            </div>
+        </section>
+        <section class="features" id="features">
+            <div class="container">
+                <div class="section-heading"><p class="eyebrow">Các bước thực hành</p><h2>Một lệnh, nhiều khả năng.</h2></div>
+                <div class="feature-grid">
+                    <article class="feature-card"><span class="number">01</span><h3>Biên dịch một file</h3><code>sass scss/main.scss css/main.css</code><p>Chuyển tệp SCSS thành CSS sẵn sàng dùng trên trang web.</p></article>
+                    <article class="feature-card"><span class="number">02</span><h3>Theo dõi thay đổi</h3><code>sass scss/main.scss css/main.css --watch</code><p>Sass tự biên dịch lại stylesheet khi mã nguồn được lưu.</p></article>
+                    <article class="feature-card"><span class="number">03</span><h3>Biên dịch cả thư mục</h3><code>sass scss/:css/ --watch</code><p>Biên dịch các stylesheet SCSS trong thư mục sang CSS.</p></article>
+                </div>
+            </div>
+        </section>
+        <section class="about container" id="about"><div><p class="eyebrow">Sass CLI</p><h2>SCSS dễ đọc.<br>CSS sẵn sàng.</h2></div><p class="about-copy">Thử sửa màu sắc hoặc khoảng cách trong <code>scss/main.scss</code>, lưu lại và quan sát <code>css/main.css</code> được cập nhật tự động khi bật watch mode.</p></section>
+    </main>
+    <footer class="footer"><div class="container footer-inner"><a class="brand" href="#home">SASS<span>LAB</span></a><p>© 2026 Bài thực hành Sass CLI</p></div></footer>
+</body>
+</html>

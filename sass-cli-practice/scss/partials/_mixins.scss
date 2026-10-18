@@ -1,0 +1,9 @@
+@mixin soft-shadow($blur: 24px) {
+  box-shadow: 0 12px $blur rgba(20, 55, 38, .10);
+}
+
+@mixin pill($background, $foreground) {
+  border-radius: 999px;
+  background: $background;
+  color: $foreground;
+}
