@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bố cục Responsive với Flexbox</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <a class="brand" href="#home"><span class="brand-mark">F</span><span>Flex<span class="brand-accent">Space</span><small>Ý tưởng · Kiến thức · Kết nối</small></span></a>
+            <div class="header-badge"><i></i> Không gian học tập</div>
+        </header>
+
+        <nav class="nav" aria-label="Điều hướng chính">
+            <a class="active" href="#home">Trang chủ</a>
+            <a href="#content">Bài viết</a>
+            <a href="#topics">Chủ đề</a>
+            <a href="#footer">Liên hệ</a>
+        </nav>
+
+        <div class="main-container" id="home">
+            <main class="content" id="content">
+                <section class="welcome-card">
+                    <div class="welcome-copy"><p class="eyebrow">CHÀO MỪNG BẠN</p><h1>Khám phá điều mới<br><span>mỗi ngày.</span></h1><p>Cùng học hỏi, thực hành và phát triển những kỹ năng hữu ích.</p><a href="#topics" class="primary-link">Khám phá chủ đề <span>→</span></a></div>
+                    <div class="welcome-art" aria-hidden="true"><span class="sun"></span><i class="hill hill-one"></i><i class="hill hill-two"></i><b>✦</b></div>
+                </section>
+
+                <section class="article-section" id="topics">
+                    <div class="section-heading"><div><p class="eyebrow">ĐỌC VÀ KHÁM PHÁ</p><h2>Nội dung nổi bật</h2></div><a href="#topics">Xem tất cả →</a></div>
+                    <div class="article-list">
+                        <article class="article-card"><div class="article-art art-blue"><span>01</span><b>⌘</b></div><div><span class="category">CÔNG NGHỆ</span><h3>Bắt đầu với thiết kế web</h3><p>Tìm hiểu cách sắp xếp nội dung thành một trang rõ ràng.</p><small>5 phút đọc · 12 tháng 10</small></div></article>
+                        <article class="article-card"><div class="article-art art-green"><span>02</span><b>✎</b></div><div><span class="category">HỌC TẬP</span><h3>Tạo thói quen học hiệu quả</h3><p>Mục tiêu nhỏ và đều đặn tạo nên tiến bộ dài lâu.</p><small>4 phút đọc · 10 tháng 10</small></div></article>
+                    </div>
+                </section>
+            </main>
+
+            <aside class="sidebar">
+                <section class="side-panel profile-panel"><p class="eyebrow">VỀ FLEXSPACE</p><div class="profile-icon">F</div><h2>Không gian để tiến bộ</h2><p>Tài nguyên và ý tưởng giúp bạn tiếp tục học hỏi mỗi ngày.</p><a href="#footer">Tìm hiểu thêm →</a></section>
+                <section class="side-panel updates-panel"><p class="eyebrow">CẬP NHẬT</p><h2>Sắp diễn ra</h2><div class="update-row"><span class="date-box"><b>20</b><small>TH10</small></span><div><strong>Buổi thực hành Flexbox</strong><small>09:00 · Trực tuyến</small></div></div><div class="update-row"><span class="date-box date-lilac"><b>24</b><small>TH10</small></span><div><strong>Chia sẻ dự án học tập</strong><small>14:00 · Phòng cộng đồng</small></div></div></section>
+                <section class="side-note"><span>✦</span><p><strong>Mẹo học tập</strong><br>Thực hành từng bước để củng cố kiến thức.</p></section>
+            </aside>
+        </div>
+
+        <footer class="footer" id="footer"><span>© 2026 FlexSpace</span><span>Bố cục responsive xây dựng bằng CSS Flexbox</span><a href="#home">Lên đầu trang ↑</a></footer>
+    </div>
+</body>
+</html>
