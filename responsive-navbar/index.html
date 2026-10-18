@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thanh điều hướng Responsive</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header class="site-header">
+        <nav class="navbar" aria-label="Điều hướng chính">
+            <a class="logo" href="#home" aria-label="MyWebsite - Trang chủ">My<span>Website</span></a>
+            <button class="menu-toggle" type="button" aria-label="Mở menu" aria-expanded="false" aria-controls="nav-links">
+                <span class="menu-icon" aria-hidden="true">☰</span>
+            </button>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home">Trang chủ</a></li>
+                <li><a href="#about">Giới thiệu</a></li>
+                <li><a href="#services">Dịch vụ</a></li>
+                <li><a href="#contact">Liên hệ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="home">
+        <section class="hero">
+            <p class="eyebrow">THIẾT KẾ WEB RESPONSIVE</p>
+            <h1>Một thanh điều hướng,<br><span>mọi kích thước màn hình.</span></h1>
+            <p>Thay đổi độ rộng cửa sổ hoặc xem trên điện thoại, rồi nhấn nút ☰ để mở menu.</p>
+            <a class="hero-link" href="#about">Tìm hiểu thêm <span aria-hidden="true">↓</span></a>
+            <div class="hero-orb orb-one" aria-hidden="true"></div>
+            <div class="hero-orb orb-two" aria-hidden="true"></div>
+        </section>
+
+        <section class="info-grid" id="about">
+            <article class="info-card">
+                <span class="card-number">01</span>
+                <h2>Flexbox</h2>
+                <p>Flexbox sắp xếp logo và các mục điều hướng thành một hàng trên màn hình lớn.</p>
+            </article>
+            <article class="info-card" id="services">
+                <span class="card-number">02</span>
+                <h2>Media queries</h2>
+                <p>Ở màn hình nhỏ, menu ngang được thay bằng nút ☰ và danh sách dọc.</p>
+            </article>
+            <article class="info-card" id="contact">
+                <span class="card-number">03</span>
+                <h2>JavaScript</h2>
+                <p>Nút menu bật hoặc tắt danh sách, đồng thời cập nhật trạng thái mở rộng.</p>
+            </article>
+        </section>
+    </main>
+
+    <footer><p>Thực hành HTML, CSS và JavaScript · Responsive Navbar</p></footer>
+</body>
+</html>
