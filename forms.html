@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form thông tin và đăng ký học viên</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 32px 16px;
+            background: #f3f6fb;
+            color: #243247;
+            font-family: Arial, sans-serif;
+        }
+
+        main {
+            max-width: 760px;
+            margin: 0 auto;
+        }
+
+        section {
+            margin-bottom: 28px;
+            padding: 24px;
+            background: #fff;
+            border: 1px solid #d9e1ec;
+            border-radius: 10px;
+        }
+
+        h1, h2 {
+            color: #174a7e;
+        }
+
+        .field {
+            margin: 16px 0;
+        }
+
+        label.field-label {
+            display: block;
+            margin-bottom: 6px;
+            font-weight: 700;
+        }
+
+        input[type="text"], input[type="email"], input[type="tel"],
+        input[type="date"], select, textarea {
+            box-sizing: border-box;
+            width: 100%;
+            max-width: 520px;
+            padding: 10px;
+            border: 1px solid #aab8c8;
+            border-radius: 5px;
+            font: inherit;
+        }
+
+        textarea {
+            min-height: 88px;
+            resize: vertical;
+        }
+
+        fieldset {
+            margin: 16px 0;
+            border: 1px solid #c7d2df;
+            border-radius: 6px;
+        }
+
+        fieldset label {
+            display: inline-block;
+            margin: 6px 14px 6px 0;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        button {
+            padding: 10px 18px;
+            border: 0;
+            border-radius: 5px;
+            font: inherit;
+            cursor: pointer;
+        }
+
+        button[type="submit"] {
+            background: #1769aa;
+            color: white;
+        }
+
+        button[type="reset"] {
+            background: #e3e9f0;
+            color: #243247;
+        }
+    </style>
+</head>
+<body>
+<main>
+    <h1>Bài tập tạo form</h1>
+
+    <section>
+        <h2>Phần 1: Form thông tin cá nhân</h2>
+        <form action="#" method="get">
+            <div class="field">
+                <label class="field-label" for="yourname">Họ và tên</label>
+                <input type="text" id="yourname" name="yourname" placeholder="Nhập họ và tên">
+            </div>
+
+            <div class="field">
+                <label class="field-label" for="email-part1">Email</label>
+                <input type="email" id="email-part1" name="email" placeholder="name@example.com">
+            </div>
+
+            <fieldset>
+                <legend>Sở thích</legend>
+                <label><input type="checkbox" name="hobby" value="reading"> Đọc sách</label>
+                <label><input type="checkbox" name="hobby" value="music"> Nghe nhạc</label>
+                <label><input type="checkbox" name="hobby" value="travel"> Du lịch</label>
+            </fieldset>
+
+            <div class="buttons">
+                <button type="submit">Gửi thông tin</button>
+                <button type="reset">Nhập lại</button>
+            </div>
+        </form>
+    </section>
+
+    <section>
+        <h2>Phần 2: Form đăng ký học viên</h2>
+        <form action="#" method="get">
+            <div class="field">
+                <label class="field-label" for="fullname">Họ và tên</label>
+                <input type="text" id="fullname" name="fullname" required>
+            </div>
+
+            <div class="field">
+                <label class="field-label" for="email-part2">Email</label>
+                <input type="email" id="email-part2" name="email" required>
+            </div>
+
+            <div class="field">
+                <label class="field-label" for="phone">Số điện thoại</label>
+                <input type="tel" id="phone" name="phone">
+            </div>
+
+            <div class="field">
+                <label class="field-label" for="birthday">Ngày sinh</label>
+                <input type="date" id="birthday" name="birthday">
+            </div>
+
+            <fieldset>
+                <legend>Giới tính</legend>
+                <label><input type="radio" name="gender" value="male"> Nam</label>
+                <label><input type="radio" name="gender" value="female"> Nữ</label>
+                <label><input type="radio" name="gender" value="other"> Khác</label>
+            </fieldset>
+
+            <div class="field">
+                <label class="field-label" for="address">Địa chỉ</label>
+                <textarea id="address" name="address"></textarea>
+            </div>
+
+            <div class="field">
+                <label class="field-label" for="course">Khóa học</label>
+                <select id="course" name="course">
+                    <option value="">-- Chọn khóa học --</option>
+                    <option value="html-css">HTML &amp; CSS</option>
+                    <option value="javascript">JavaScript</option>
+                    <option value="java">Java</option>
+                    <option value="python">Python</option>
+                </select>
+            </div>
+
+            <fieldset>
+                <legend>Hình thức học</legend>
+                <label><input type="radio" name="study_type" value="online"> Online</label>
+                <label><input type="radio" name="study_type" value="offline"> Offline</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Sở thích</legend>
+                <label><input type="checkbox" name="hobby" value="reading"> Đọc sách</label>
+                <label><input type="checkbox" name="hobby" value="music"> Nghe nhạc</label>
+                <label><input type="checkbox" name="hobby" value="coding"> Lập trình</label>
+            </fieldset>
+
+            <div class="field">
+                <label class="field-label" for="note">Ghi chú</label>
+                <textarea id="note" name="note" placeholder="Thông tin bổ sung (nếu có)"></textarea>
+            </div>
+
+            <div class="buttons">
+                <button type="submit">Đăng ký</button>
+                <button type="reset">Nhập lại</button>
+            </div>
+        </form>
+    </section>
+</main>
+</body>
+</html>
