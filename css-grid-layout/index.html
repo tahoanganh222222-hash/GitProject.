@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid Layout</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <a class="brand" href="#home"><span class="brand-mark">G</span><span>Grid<span class="brand-accent">Space</span><small>Học tập và sáng tạo mỗi ngày</small></span></a>
+            <div class="header-actions"><span class="status-dot"></span><span>Không gian học tập</span><button type="button" aria-label="Thông báo">♧</button><span class="user-avatar" aria-label="Tài khoản người dùng">A</span></div>
+        </header>
+
+        <nav class="sidebar" aria-label="Menu bên">
+            <p class="nav-label">MENU</p>
+            <a class="side-link active" href="#home"><span>⌂</span> Tổng quan</a>
+            <a class="side-link" href="#courses"><span>▤</span> Khóa học</a>
+            <a class="side-link" href="#projects"><span>◇</span> Dự án</a>
+            <a class="side-link" href="#resources"><span>▧</span> Tài nguyên</a>
+            <div class="sidebar-divider"></div>
+            <p class="nav-label">GẦN ĐÂY</p>
+            <a class="recent-link" href="#projects"><i></i> CSS Grid cơ bản</a>
+            <a class="recent-link" href="#projects"><i></i> Responsive Web</a>
+            <div class="sidebar-tip"><span>✦</span><strong>Tiếp tục tiến bước</strong><p>Mỗi ngày một chút, bạn sẽ đi rất xa.</p></div>
+        </nav>
+
+        <main class="content" id="home">
+            <section class="welcome-banner">
+                <div><p class="eyebrow">THỨ HAI, 18 THÁNG 10</p><h1>Chào bạn, An! <span>✦</span></h1><p>Sẵn sàng học thêm điều mới hôm nay chưa?</p><a href="#courses" class="banner-button">Tiếp tục học <span>→</span></a></div>
+                <div class="banner-art" aria-hidden="true"><div class="art-sun"></div><div class="art-hill hill-one"></div><div class="art-hill hill-two"></div><span>✦</span></div>
+            </section>
+
+            <section class="stats-grid" aria-label="Tiến độ học tập">
+                <article class="stat-card"><span class="stat-icon icon-blue">▤</span><p>Khóa học đang học</p><strong>04</strong><small>+1 trong tháng này</small></article>
+                <article class="stat-card"><span class="stat-icon icon-green">✓</span><p>Bài học đã hoàn thành</p><strong>28</strong><small>Tiếp tục phát huy!</small></article>
+                <article class="stat-card"><span class="stat-icon icon-orange">◷</span><p>Thời gian học</p><strong>16.5 <em>giờ</em></strong><small>Trong 30 ngày qua</small></article>
+            </section>
+
+            <section class="panel course-panel" id="courses">
+                <div class="panel-heading"><div><p class="eyebrow">LỘ TRÌNH CỦA BẠN</p><h2>Khóa học đang học</h2></div><a href="#courses">Xem tất cả →</a></div>
+                <article class="course-row"><div class="course-art art-html">&lt;/&gt;</div><div class="course-info"><span>THIẾT KẾ WEB</span><h3>HTML &amp; CSS nền tảng</h3><p>12 / 20 bài học</p><div class="progress"><i style="width:60%"></i></div></div><strong class="progress-value">60%</strong></article>
+                <article class="course-row"><div class="course-art art-js">JS</div><div class="course-info"><span>LẬP TRÌNH</span><h3>JavaScript cho người mới</h3><p>6 / 18 bài học</p><div class="progress"><i style="width:33%"></i></div></div><strong class="progress-value">33%</strong></article>
+            </section>
+        </main>
+
+        <aside class="rightbar" id="resources">
+            <section class="panel daily-panel"><div class="panel-heading"><div><p class="eyebrow">MỤC TIÊU</p><h2>Hôm nay</h2></div><span class="date-badge">18<br><small>TH10</small></span></div><div class="goal-ring"><div><strong>2/3</strong><small>hoàn thành</small></div></div><p class="goal-caption">Bạn đang làm rất tốt. Cố gắng hoàn thành mục tiêu nhé!</p><div class="goal-list"><span class="done">✓</span><p>Học một bài CSS Grid</p><span class="done">✓</span><p>Ôn lại Flexbox</p><span class="pending"></span><p>Thực hành responsive</p></div></section>
+            <section class="panel event-panel" id="projects"><div class="panel-heading"><div><p class="eyebrow">SẮP TỚI</p><h2>Lịch học</h2></div><a href="#projects">•••</a></div><div class="event-row"><span class="event-date"><b>20</b><small>TH10</small></span><div><strong>Workshop CSS Grid</strong><small>09:00 · Phòng trực tuyến</small></div></div><div class="event-row"><span class="event-date date-purple"><b>23</b><small>TH10</small></span><div><strong>Nộp dự án cuối khóa</strong><small>23:59 · Trên hệ thống</small></div></div></section>
+        </aside>
+
+        <footer class="footer"><span>© 2026 GridSpace</span><span>Được thiết kế để học tập hiệu quả</span><a href="#home">Trở về đầu trang ↑</a></footer>
+    </div>
+</body>
+</html>
