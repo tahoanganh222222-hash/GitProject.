@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bố cục Responsive bằng CSS Flexbox</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="page">
+        <header class="header">
+            <a class="brand" href="#home"><span class="brand-icon">F</span><span>Flow<span>Desk</span><small>Không gian làm việc linh hoạt</small></span></a>
+            <div class="header-status"><i></i> Sẵn sàng khám phá</div>
+        </header>
+
+        <nav class="navigation" aria-label="Điều hướng chính">
+            <a class="active" href="#home">Trang chủ</a>
+            <a href="#articles">Bài viết</a>
+            <a href="#resources">Tài nguyên</a>
+            <a href="#about">Giới thiệu</a>
+        </nav>
+
+        <div class="body-layout" id="home">
+            <main class="main-content" id="articles">
+                <section class="hero">
+                    <div class="hero-copy"><p class="eyebrow">GÓC LÀM VIỆC CỦA BẠN</p><h1>Sắp xếp tốt hơn.<br><span>Làm việc hiệu quả hơn.</span></h1><p>Một giao diện linh hoạt giúp bạn tập trung vào ý tưởng và công việc quan trọng.</p><a href="#resources" class="hero-button">Khám phá tài nguyên <span>→</span></a></div>
+                    <div class="hero-art" aria-hidden="true"><div class="art-circle"></div><div class="art-card"><i></i><i></i><i></i><b></b></div><span>✦</span></div>
+                </section>
+
+                <section class="latest-section">
+                    <div class="section-heading"><div><p class="eyebrow">CẬP NHẬT MỚI</p><h2>Ý tưởng và hướng dẫn</h2></div><a href="#articles">Xem tất cả →</a></div>
+                    <div class="article-list">
+                        <article class="article-card"><div class="article-image image-blue"><span>01</span><b>⌘</b></div><div class="article-copy"><span class="tag">NĂNG SUẤT</span><h3>Tạo không gian làm việc tập trung</h3><p>Những điều chỉnh nhỏ giúp ngày làm việc nhẹ nhàng hơn.</p><small>6 phút đọc · Hôm nay</small></div></article>
+                        <article class="article-card"><div class="article-image image-green"><span>02</span><b>✎</b></div><div class="article-copy"><span class="tag">THÓI QUEN</span><h3>Lập kế hoạch tuần một cách đơn giản</h3><p>Chọn ưu tiên và dành thời gian cho việc quan trọng.</p><small>4 phút đọc · Hôm qua</small></div></article>
+                    </div>
+                </section>
+            </main>
+
+            <aside class="sidebar" id="resources">
+                <section class="side-card profile-card" id="about"><p class="eyebrow">FLOWDESK LÀ GÌ?</p><div class="profile-mark">F</div><h2>Ý tưởng để tiến xa</h2><p>Chia sẻ các cách làm việc, tài nguyên và cảm hứng cho hành trình mỗi ngày.</p><a href="#about">Tìm hiểu thêm →</a></section>
+                <section class="side-card links-card"><p class="eyebrow">LIÊN KẾT HỮU ÍCH</p><h2>Tài nguyên nhanh</h2><a href="#resources"><span>▧</span> Mẫu lập kế hoạch <b>›</b></a><a href="#resources"><span>◷</span> Hướng dẫn tập trung <b>›</b></a><a href="#resources"><span>◇</span> Công cụ yêu thích <b>›</b></a></section>
+                <section class="side-tip"><span>✦</span><p><strong>Mẹo hôm nay</strong><br>Bắt đầu bằng một việc nhỏ bạn có thể hoàn thành ngay.</p></section>
+            </aside>
+        </div>
+
+        <footer class="footer"><a class="brand footer-brand" href="#home"><span class="brand-icon">F</span><span>Flow<span>Desk</span></span></a><p>Giao diện responsive được xây dựng bằng CSS Flexbox.</p><small>© 2026 FlowDesk</small></footer>
+    </div>
+</body>
+</html>
